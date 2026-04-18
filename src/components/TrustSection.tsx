@@ -5,7 +5,7 @@ export default function TrustSection() {
 
   return (
     <section className="relative py-16">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="page-shell">
         {certificates.length > 0 && (
           <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
             {certificates.map((cert) => (
@@ -35,16 +35,16 @@ export default function TrustSection() {
 
         <div>
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground">Attraktive Arbeitgeber. Gutes Gehalt.</h2>
-            <p className="mt-2 mx-auto max-w-lg text-foreground-light">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">Attraktive Arbeitgeber. Gutes Gehalt.</h2>
+            <p className="mt-2 mx-auto max-w-2xl text-lg text-foreground-light">
               Mit der richtigen Qualifikation startest Du bei namhaften Unternehmen – und verdienst von Anfang an gut.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center py-6">
-                <p className="text-3xl sm:text-4xl font-bold text-primary">{stat.value}</p>
-                <p className="text-foreground-light mt-2 max-w-xs mx-auto">{stat.label}</p>
+                <p className="text-4xl sm:text-5xl font-bold text-primary">{stat.value}</p>
+                <p className="text-foreground-light mt-2 max-w-sm mx-auto text-base">{stat.label}</p>
               </div>
             ))}
           </div>

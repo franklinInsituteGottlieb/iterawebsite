@@ -1,4 +1,4 @@
-# SEO-Strategie: Memovida vs. Forward Education – Vergleich & Skalierung
+# SEO-Strategie: Memovida vs. Itera Campus – Vergleich & Skalierung
 
 **Stand:** März 2026  
 **Zweck:** 1:1-Vergleich der SEO-Seitenarchitektur, Sitemap-Strategie und Wachstumspfade
@@ -7,7 +7,7 @@
 
 ## 1. Kern-Strategie im Vergleich
 
-| Strategie-Element | Memovida | Forward Education | Status |
+| Strategie-Element | Memovida | Itera Campus | Status |
 |---|---|---|---|
 | **Programmatische Stadt-Seiten** | `/standorte/[stadt]` | `/standorte/[stadt]` | ✅ Umgesetzt |
 | **Stadt × Leistung (vorwärts)** | `/standorte/[stadt]/[bestattungsart]` | `/standorte/[stadt]/[kurs]` | ✅ Umgesetzt |
@@ -23,7 +23,7 @@
 
 ---
 
-## 2. Sitemap-Umfang heute (Forward Education, Stand März 2026)
+## 2. Sitemap-Umfang heute (Itera Campus, Stand März 2026)
 
 | URL-Typ | Muster | Anzahl URLs | Priorität |
 |---|---|---|---|
@@ -142,7 +142,7 @@ Alternativ: Separate Domains pro Unternehmen (wie Memovida als Marke vs. lokale 
 
 ### 5.4 Zusätzliche Content-Typen (Memovida-Analogie)
 
-| Memovida | Forward Education Äquivalent | Status |
+| Memovida | Itera Campus Äquivalent | Status |
 |---|---|---|
 | `/preise` | `/kosten` oder `/foerderung` | ⬜ Fehlt |
 | `/[art]/[stadt]` | `/kurse/[kurs]/[stadt]` | ✅ |
@@ -212,7 +212,7 @@ Bei 10 Kursen × 400 Standorten × 2 Richtungen = **8.000 URLs** – noch weit u
 
 | Cluster | URL-Typ | Beispiel-Keywords |
 |---|---|---|
-| Brand | `/` | Forward Education, Weiterbildung |
+| Brand | `/` | Itera Campus, Weiterbildung |
 | Kurs allgemein | `/kurse/[kurs]` | KI Weiterbildung, IT Sales Kurs |
 | Stadt-first | `/standorte/[stadt]` | Weiterbildung München, Kurs Berlin |
 | Kurs × Stadt (lokal) | `/standorte/[stadt]/[kurs]` | KI Kurs München, Sales Weiterbildung Berlin |

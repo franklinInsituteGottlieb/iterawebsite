@@ -6,15 +6,15 @@ import CompanyLogosCarousel from "@/components/CompanyLogosCarousel";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-x-hidden pt-16">
-      <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 text-center">
+    <section className="relative min-h-screen flex items-center justify-center overflow-x-hidden pt-28 md:pt-32">
+      <div className="relative z-10 page-shell py-24 md:py-28 text-center">
         {/* Headline – dezentes Fade-in */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-foreground leading-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tight text-foreground leading-tight">
           {siteConfig.hero.headline}
         </h1>
 
         {/* Subline – Zeilenumbruch, dann Marker-Zeile (wie zuvor) */}
-        <p className="mt-6 mx-auto max-w-2xl text-lg sm:text-xl text-foreground-light leading-relaxed">
+        <p className="mt-6 mx-auto max-w-4xl text-xl sm:text-2xl text-foreground-light leading-relaxed">
           {siteConfig.hero.subline}
           <br />
           <span className="inline-block mt-2 mark-draw">
@@ -27,7 +27,7 @@ export default function HeroSection() {
 
         {/* CTA */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+          <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg md:text-xl font-semibold text-white hover:bg-primary-dark transition-colors">
             {siteConfig.hero.ctaText}
             <svg
               className="ml-2 h-5 w-5"
@@ -45,7 +45,7 @@ export default function HeroSection() {
           </TypeformLink>
           <a
             href="#kurse"
-            className="inline-flex items-center justify-center rounded-full border-2 border-white/80 bg-white/90 px-8 py-4 text-lg font-bold text-foreground shadow-sm hover:border-primary hover:text-primary hover:bg-white"
+            className="inline-flex items-center justify-center rounded-full border-2 border-white/80 bg-white/90 px-8 py-4 text-lg md:text-xl font-bold text-foreground shadow-sm hover:border-primary hover:text-primary hover:bg-white"
           >
             Kurse entdecken
           </a>
@@ -68,7 +68,7 @@ export default function HeroSection() {
               ))}
             </div>
           </div>
-          <p className="text-sm font-medium text-foreground">
+          <p className="text-base font-medium text-foreground">
             <span className="font-bold">4,9</span>
             <span className="text-foreground-light"> · </span>
             <span>450+ Google-Bewertungen</span>

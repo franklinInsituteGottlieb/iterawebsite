@@ -18,7 +18,6 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [standorteOpen, setStandorteOpen] = useState(false);
   const [mobileStandorteOpen, setMobileStandorteOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -34,15 +33,6 @@ export default function Navbar() {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [standorteOpen]);
 
-  useEffect(() => {
-    function onScroll() {
-      setScrolled(typeof window !== "undefined" ? window.scrollY > 80 : false);
-    }
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
     if (pathname !== "/") return;
@@ -54,28 +44,23 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-4 pt-4 md:px-6 md:pt-5">
-      <nav
-        className={`mx-auto max-w-6xl rounded-2xl border ${scrolled
-            ? "bg-white shadow-lg shadow-black/5 border-slate-200"
-            : "bg-white shadow-lg shadow-black/5 border-slate-200"
-          }`}
-      >
-        <div className="relative flex h-20 items-center justify-between px-5 sm:px-6 lg:px-8 py-1">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-slate-200/90 bg-white/95 shadow-sm backdrop-blur-md supports-[backdrop-filter]:bg-white/90">
+      <nav className="w-full">
+        <div className="relative flex min-h-[5.25rem] md:min-h-28 page-shell items-center justify-between gap-6 py-3 md:py-4">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 shrink-0">
             <Image
-              src="/logo.png"
+              src="/iteracampus_nobg.png"
               alt={`${siteConfig.seoBrand} Logo`}
-              width={280}
-              height={82}
-              className="h-12 w-auto object-contain md:h-14"
+              width={320}
+              height={94}
+              className="h-14 w-auto object-contain md:h-[4.25rem]"
               priority
             />
           </a>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
+          <div className="hidden md:flex items-center gap-11 lg:gap-12 absolute left-1/2 -translate-x-1/2">
             {siteConfig.nav.links.map((link) => {
               const isAnchor = link.href.startsWith("/#");
               const isStandorte = link.href === "/standorte";
@@ -87,13 +72,13 @@ export default function Navbar() {
                     <button
                       type="button"
                       onClick={() => setStandorteOpen(!standorteOpen)}
-                      className={`flex items-center gap-1 text-lg font-semibold hover:text-primary ${isActive ? "text-primary" : "text-foreground"}`}
+                      className={`flex items-center gap-1.5 text-xl font-semibold hover:text-primary ${isActive ? "text-primary" : "text-foreground"}`}
                       aria-expanded={standorteOpen}
                       aria-haspopup="true"
                     >
                       {link.label}
                       <svg
-                        className={`h-4 w-4 transition-transform ${standorteOpen ? "rotate-180" : ""}`}
+                        className={`h-5 w-5 transition-transform ${standorteOpen ? "rotate-180" : ""}`}
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={2}
@@ -140,7 +125,7 @@ export default function Navbar() {
                       e.preventDefault();
                       handleNavClick(link.href);
                     }}
-                    className="text-lg font-semibold text-foreground hover:text-primary"
+                    className="text-xl font-semibold text-foreground hover:text-primary"
                   >
                     {link.label}
                   </a>
@@ -151,7 +136,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-lg font-semibold hover:text-primary ${isActive ? "text-primary" : "text-foreground"}`}
+                  className={`text-xl font-semibold hover:text-primary ${isActive ? "text-primary" : "text-foreground"}`}
                 >
                   {link.label}
                 </Link>
@@ -161,7 +146,7 @@ export default function Navbar() {
 
           {/* CTA – wie Hero-Button (rounded-full, gleicher Schatten) */}
           <div className="hidden md:flex items-center shrink-0">
-            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-[15px] font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-base font-semibold text-white hover:bg-primary-dark transition-colors">
               {siteConfig.nav.ctaText}
             </TypeformLink>
           </div>
@@ -169,24 +154,24 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-slate-100"
+            className="md:hidden flex flex-col gap-1.5 p-3 rounded-xl hover:bg-slate-100"
             aria-label="Menü öffnen"
           >
             <span
-              className={`block h-0.5 w-5 bg-foreground ${mobileOpen ? "translate-y-2 rotate-45" : ""}`}
+              className={`block h-0.5 w-6 bg-foreground ${mobileOpen ? "translate-y-2 rotate-45" : ""}`}
             />
             <span
-              className={`block h-0.5 w-5 bg-foreground ${mobileOpen ? "opacity-0" : ""}`}
+              className={`block h-0.5 w-6 bg-foreground ${mobileOpen ? "opacity-0" : ""}`}
             />
             <span
-              className={`block h-0.5 w-5 bg-foreground ${mobileOpen ? "-translate-y-2 -rotate-45" : ""}`}
+              className={`block h-0.5 w-6 bg-foreground ${mobileOpen ? "-translate-y-2 -rotate-45" : ""}`}
             />
           </button>
         </div>
 
         {/* Mobile Menu – gleiche Glas-Optik */}
         {mobileOpen && (
-          <div className="md:hidden border-t border-slate-200 py-4 px-5 space-y-1 rounded-b-2xl bg-white">
+          <div className="md:hidden border-t border-slate-200 py-5 px-5 sm:px-8 space-y-1 bg-white">
             {siteConfig.nav.links.map((link) => {
               const isAnchor = link.href.startsWith("/#");
               const isStandorte = link.href === "/standorte";
@@ -198,7 +183,7 @@ export default function Navbar() {
                     <button
                       type="button"
                       onClick={() => setMobileStandorteOpen(!mobileStandorteOpen)}
-                      className={`flex items-center justify-between w-full rounded-xl py-3 px-4 text-lg font-semibold hover:bg-slate-100 ${isActive ? "text-primary" : "text-foreground"}`}
+                      className={`flex items-center justify-between w-full rounded-xl py-3.5 px-4 text-xl font-semibold hover:bg-slate-100 ${isActive ? "text-primary" : "text-foreground"}`}
                     >
                       {link.label}
                       <svg
@@ -245,7 +230,7 @@ export default function Navbar() {
                       e.preventDefault();
                       handleNavClick(link.href);
                     }}
-                    className="block rounded-xl py-3 px-4 text-lg font-semibold text-foreground hover:text-primary hover:bg-slate-100"
+                    className="block rounded-xl py-3.5 px-4 text-xl font-semibold text-foreground hover:text-primary hover:bg-slate-100"
                   >
                     {link.label}
                   </a>
@@ -257,14 +242,14 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`block rounded-xl py-3 px-4 text-lg font-semibold hover:text-primary hover:bg-slate-100 ${isActive ? "text-primary" : "text-foreground"}`}
+                  className={`block rounded-xl py-3.5 px-4 text-xl font-semibold hover:text-primary hover:bg-slate-100 ${isActive ? "text-primary" : "text-foreground"}`}
                 >
                   {link.label}
                 </Link>
               );
             })}
             <TypeformLink
-              className="mt-2 block w-full text-center rounded-full bg-primary px-6 py-3 text-base font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors"
+              className="mt-3 block w-full text-center rounded-full bg-primary px-6 py-3.5 text-lg font-semibold text-white hover:bg-primary-dark transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               {siteConfig.nav.ctaText}

@@ -4,8 +4,10 @@
 
 | Quelle | Sheet | Inhalt |
 |--------|--------|--------|
-| Nur wenn Nutzer **von außen** mit UTM (forward-education/website) kommt | **page_logs** | brand, received_at, ts, session_id, course_id, course_type, course_duration |
+| Nur wenn Nutzer **von außen** mit UTM (itera-campus / website; Legacy: forward-education) oder meinnow kommt | **page_logs** | brand, received_at, ts, session_id, course_id, course_type, course_duration |
 | **Internes** Website-Logging (immer) | **website_logs** | received_at, session_id, type (page_view / search / click), pathname, search_query, search_result_slug, search_result_course_id, click_href, click_text |
+
+**Hinweis `brand`:** Neue Events nutzen `itera-campus` (Default in `/api/page-log`). Historische Zeilen im Sheet können weiter `forward` oder `forward-education` enthalten – Filter in Auswertungen ggf. erweitern.
 
 ---
 

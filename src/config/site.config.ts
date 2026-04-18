@@ -19,7 +19,7 @@ export interface CourseDetailConfig {
   reviewCount: string;
   contentSections: { title: string; items: string[] }[];
   faq: FaqItemConfig[];
-  /** Optionales Hero-Bild (z. B. /asian.png), Fallback: /asian+black.png */
+  /** Optionales Hero-Bild (z. B. /ai.png, /pm.png, /sales.png), Fallback: /pm.png */
   heroImage?: string;
 }
 
@@ -47,11 +47,11 @@ export interface FaqItemConfig {
 
 export interface SiteConfig {
   name: string;
-  /** Brand für SEO: Titel, Meta, Schema (z. B. "Forward Education"). Rechtliches bleibt companyLegalName. */
+  /** Brand für SEO: Titel, Meta, Schema (z. B. "Itera Campus"). */
   seoBrand: string;
   /** Öffentliche Basis-URL der Website (für Sitemap, OpenGraph, Canonical). */
   siteUrl: string;
-  /** Rechtliche Bezeichnung, z. B. für Impressum */
+  /** Nur Impressum § 5 TMG (Name nicht auf übriger Website wiederholen) */
   companyLegalName: string;
   tagline: string;
   colors: {
@@ -84,14 +84,14 @@ export interface SiteConfig {
     address: string;
   };
   legal: {
-    /** Angaben gemäß § 5 TMG – Geschäftsführer / Vertreten durch */
+    /** Inhaber / Betrieb gem. § 5 TMG */
     responsiblePerson: string;
     /** Inhaltlich verantwortlich gem. § 55 RStV */
     contentResponsible: string;
-    /** z. B. Amtsgericht München */
-    registerCourt: string;
-    /** Registernummer */
-    registerNumber: string;
+    /** z. B. Amtsgericht München (optional, nur bei Eintrag im Handelsregister) */
+    registerCourt?: string;
+    /** Registernummer (optional) */
+    registerNumber?: string;
     /** USt-IdNr. (optional) */
     vatId?: string;
   };
@@ -115,28 +115,28 @@ export interface SiteConfig {
 }
 
 /** Link für Bewerbung / Beratung (Typeform Kurzbewerbung) */
-const APPLICATION_FORM_URL = "https://form.typeform.com/to/APjxbSz0";
+const APPLICATION_FORM_URL = "https://form.typeform.com/to/rO5pLQhB";
 
 export const siteConfig: SiteConfig = {
-  name: "Forward Education",
-  seoBrand: "Forward Education",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://forward-education.de",
-  companyLegalName: "Forward Education GmbH",
+  name: "Itera Campus",
+  seoBrand: "Itera Campus",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://iteracampus.de",
+  companyLegalName: "Gottlieb Dinh",
   tagline: "Weiterbildung. Weiterkommen.",
 
   colors: {
-    primary: "#3B82F6",
-    primaryLight: "#DBEAFE",
-    primaryDark: "#1E40AF",
-    accent: "#1D4ED8",
-    background: "#FFFFFF",
-    backgroundAlt: "#F8FAFC",
-    text: "#1E293B",
-    textLight: "#64748B",
+    primary: "#ea580c",
+    primaryLight: "#ffedd5",
+    primaryDark: "#c2410c",
+    accent: "#9a3412",
+    background: "#ffffff",
+    backgroundAlt: "#fafaf9",
+    text: "#0f2238",
+    textLight: "#3d5674",
   },
 
   hero: {
-    headline: "Deine Zukunft beginnt hier.",
+    headline: "Weiterbildung, die zu Dir passt – praxisnah bis zum Job.",
     subline:
       "Weiterbildung, die wirkt – mit Bildungsgutschein bis zu 100 % förderbar. Live-Unterricht, echte Projekte und Bewerbungscoaching bis zum nächsten Job.",
     ctaText: "Jetzt kostenlos beraten lassen",
@@ -210,7 +210,7 @@ export const siteConfig: SiteConfig = {
   ],
 
   cta: {
-    headline: "Finde die Weiterbildung, die zu Dir passt.",
+    headline: "Finde genau die Weiterbildung, die zu Dir passt.",
     subline:
       "Kostenlose Beratung – wir prüfen Deine Fördermöglichkeiten und melden uns innerhalb von 24 Stunden. Unverbindlich.",
     buttonText: "Jetzt kostenlos beraten lassen",
@@ -218,23 +218,21 @@ export const siteConfig: SiteConfig = {
   },
 
   footer: {
-    copyright: `© ${new Date().getFullYear()} Forward Education GmbH. Alle Rechte vorbehalten.`,
-    email: "lorenz.franz@forward-education.de",
+    copyright: `© ${new Date().getFullYear()} Itera Campus. Alle Rechte vorbehalten.`,
+    email: "kontakt@iteracampus.de",
     address: "Stefan-George-Ring 2, 81929 München",
   },
 
   legal: {
-    responsiblePerson: "Johannes Burzin, Lorenz Franz",
-    contentResponsible: "Johannes Burzin",
-    registerCourt: "Amtsgericht München",
-    registerNumber: "HRB 290423",
+    responsiblePerson: "Gottlieb Dinh",
+    contentResponsible: "Gottlieb Dinh",
   },
 
   nav: {
     links: [
       { label: "Kurse", href: "/#kurse" },
       { label: "Standorte", href: "/standorte" },
-      { label: "Ratgeber", href: "/ratgeber" },
+      { label: "Campus-Wissen", href: "/ratgeber" },
       { label: "FAQ", href: "/#faq" },
     ],
     ctaText: "Jetzt beraten lassen",
@@ -259,9 +257,9 @@ export const siteConfig: SiteConfig = {
   },
   faq: [
     {
-      question: "Ist Forward Education Institute GmbH seriös?",
+      question: "Ist Itera Campus seriös?",
       answer:
-        "Ja. Forward Education ist ein eingetragenes Unternehmen (GmbH) mit Sitz in München, vollem Impressum und klaren rechtlichen Angaben. Unsere Weiterbildungen sind AZAV-zertifiziert und damit mit dem Bildungsgutschein der Agentur für Arbeit förderbar. Wir arbeiten mit anerkannten Partnern zusammen, und unsere Absolvent:innen starten bei namhaften Arbeitgebern. Seriosität und Transparenz sind uns wichtig – bei Fragen erreichst Du uns jederzeit.",
+        "Ja. Itera Campus ist die Marke für unsere Weiterbildungsangebote; Anbieter und Kontakt siehst Du im Impressum. Unsere Maßnahmen sind AZAV-zertifiziert und können mit staatlicher Kostenübernahme (z. B. über die Agentur für Arbeit) kombiniert werden, sofern diese im Einzelfall bewilligt wird. Wir arbeiten mit anerkannten Partnern zusammen, und unsere Absolvent:innen starten bei namhaften Arbeitgebern. Seriosität und Transparenz sind uns wichtig – bei Fragen erreichst Du uns jederzeit.",
     },
     {
       question: "Wer übernimmt die Kosten für die Weiterbildung?",
@@ -284,12 +282,13 @@ export const siteConfig: SiteConfig = {
         "Für Berufseinsteiger:innen, Quereinsteiger:innen und Berufstätige, die sich in KI, Sales oder Projektmanagement qualifizieren möchten. Vorkenntnisse sind je nach Kurs unterschiedlich – wir beraten Dich gerne.",
     },
   ],
-  tracking: { brand: "forward-education" },
+  tracking: { brand: "itera-campus" },
 };
 
 /** Dummy-Daten für Kursdetailseiten (später aus Datenbank) */
 export const courseDetailsBySlug: Record<string, CourseDetailConfig> = {
   "kuenstliche-intelligenz": {
+    heroImage: "/ai.png",
     features: [
       "MacBook inklusive",
       "Bequem von zuhause aus lernen",
@@ -408,7 +407,7 @@ export const courseDetailsBySlug: Record<string, CourseDetailConfig> = {
     ],
   },
   "it-sales": {
-    heroImage: "/asian.png",
+    heroImage: "/sales.png",
     features: [
       "MacBook inklusive",
       "Bequem von zuhause aus lernen",
@@ -525,7 +524,7 @@ export const courseDetailsBySlug: Record<string, CourseDetailConfig> = {
     ],
   },
   "projektmanagement": {
-    heroImage: "/schwarzeFrauMann.png",
+    heroImage: "/pm.png",
     features: [
       "MacBook inklusive",
       "Bequem von zuhause aus lernen",

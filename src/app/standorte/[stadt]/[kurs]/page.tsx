@@ -47,9 +47,9 @@ export default async function KursStandortPage({ params }: PageProps) {
     <>
       <CourseSchema name={`${c.title} Weiterbildung ${s.name}`} description={c.description} url={url} />
       <Navbar />
-      <main className="relative min-h-screen pt-28 pb-24">
+      <main className="relative min-h-screen pt-36 pb-24">
         <PageBackground />
-        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 page-shell">
           <Breadcrumbs
             items={[
               { label: "Startseite", href: "/" },
@@ -71,7 +71,7 @@ export default async function KursStandortPage({ params }: PageProps) {
               In 3–6 Monaten fit für den Job – von {s.name} aus, ohne eigene Kosten. Die Agentur für Arbeit übernimmt die Gebühren.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+              <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
                 Kostenloses Beratungsgespräch buchen
               </TypeformLink>
               <span className="text-sm text-foreground-light">
@@ -97,7 +97,7 @@ export default async function KursStandortPage({ params }: PageProps) {
 
           {/* Kursinhalte */}
           {detail && (
-            <section id="inhalt" className="mb-16 scroll-mt-28">
+            <section id="inhalt" className="mb-16 scroll-mt-36">
               <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
                 Lerninhalte
               </p>
@@ -189,7 +189,7 @@ export default async function KursStandortPage({ params }: PageProps) {
             <p className="text-foreground-light mb-6 max-w-lg mx-auto">
               In 15 Minuten klären wir: Passt der Kurs zu Dir? Wie bekommst Du den Bildungsgutschein? Wann kannst Du starten?
             </p>
-            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
               Jetzt Termin für Beratungsgespräch buchen
             </TypeformLink>
             <p className="mt-3 text-xs text-foreground-light">

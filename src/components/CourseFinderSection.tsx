@@ -159,12 +159,12 @@ export default function CourseFinderSection() {
   }
 
   return (
-    <section id="kurs-finder" className="relative py-16 scroll-mt-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-2">
+    <section id="kurs-finder" className="relative py-16 scroll-mt-36">
+      <div className="page-shell">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-center mb-2">
           Passenden Kurs finden
         </h2>
-        <p className="text-foreground-light text-center mb-8">
+        <p className="text-lg text-foreground-light text-center mb-8">
           Such nach Thema oder stöber in unseren Schwerpunkten.
         </p>
 
@@ -175,8 +175,8 @@ export default function CourseFinderSection() {
           onMouseLeave={() => setHovered(false)}
           className={`relative mb-10 rounded-2xl ${
             expanded
-              ? "shadow-xl shadow-primary/15 ring-2 ring-primary/25"
-              : "shadow-md shadow-black/5"
+              ? "ring-2 ring-primary/30"
+              : "shadow-md shadow-[#0a1526]/8"
           }`}
         >
           <div

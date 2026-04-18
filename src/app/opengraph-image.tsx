@@ -1,7 +1,8 @@
 import { ImageResponse } from "next/og";
+import { siteConfig } from "@/config/site.config";
 
 export const runtime = "edge";
-export const alt = "Forward Education – Weiterbildung. Weiterkommen.";
+export const alt = `${siteConfig.seoBrand} – ${siteConfig.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -16,7 +17,7 @@ export default function Image() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #1E40AF 0%, #3B82F6 50%, #60A5FA 100%)",
+          background: "linear-gradient(135deg, #0a1526 0%, #7c2d12 38%, #ea580c 72%, #fb923c 100%)",
           fontFamily: "sans-serif",
         }}
       >
@@ -39,7 +40,7 @@ export default function Image() {
               marginBottom: 16,
             }}
           >
-            Forward Education
+            {siteConfig.seoBrand}
           </div>
           <div
             style={{
@@ -50,7 +51,7 @@ export default function Image() {
               lineHeight: 1.4,
             }}
           >
-            Weiterbildung. Weiterkommen.
+            {siteConfig.tagline}
           </div>
           <div
             style={{

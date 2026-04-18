@@ -1,4 +1,4 @@
-# Indexierungs-Strategie – Forward Education
+# Indexierungs-Strategie – Itera Campus
 
 **Zweck:** Phasenweise Sitemap-Steuerung, damit Google die wichtigsten Seiten zuerst crawlt und indexiert.
 
@@ -35,7 +35,7 @@ SITEMAP_PHASE=1
    - `/kurse/it-sales`
    - `/kurse/projektmanagement`
    - `/kosten`
-4. Täglich prüfen: `site:forward-education.de` in Google
+4. Täglich prüfen: `site:iteracampus.de` in Google
 5. Warten, bis Kern-Seiten im Index sind (GSC „Seiten"-Bericht: „Gültig")
 
 ### Woche 3–4: Phase 2
@@ -78,7 +78,7 @@ SITEMAP_PHASE=1
 
 | Indikator | Phase 1 → 2 | Phase 2 → 3 |
 |-----------|-------------|-------------|
-| Kern-Seiten indexiert | Ja (prüfe `site:forward-education.de`) | Ja |
+| Kern-Seiten indexiert | Ja (prüfe `site:iteracampus.de`) | Ja |
 | GSC „Gültig" steigt | Mind. 30+ Seiten | Mind. 200+ Seiten |
 | Keine Server-Errors | Ja | Ja |
 | Wochen seit letzter Phase | Mind. 2 | Mind. 2 |

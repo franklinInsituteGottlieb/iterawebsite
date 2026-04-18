@@ -48,20 +48,20 @@ function BenefitIcon({ icon }: { icon: string }) {
 
 export default function BenefitsSection() {
   return (
-    <section id="vorteile" className="py-24 scroll-mt-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section id="vorteile" className="py-24 scroll-mt-36">
+      <div className="page-shell">
         <AnimateOnScroll animation="fadeUp" delay={0} replayWhenInView>
           {/* Eine große Kachel: Header + alle Vorteile darin */}
           <div className="rounded-2xl border border-slate-200 bg-slate-50 shadow-sm overflow-hidden">
             {/* Header-Bereich in der Kachel */}
             <div className="px-8 pt-10 pb-6 sm:px-12 sm:pt-12 sm:pb-8 text-center border-b border-slate-200/80 bg-white/60">
-              <span className="block text-sm font-semibold uppercase tracking-widest text-primary">
+              <span className="block text-base font-semibold uppercase tracking-widest text-primary">
                 Deine Vorteile
               </span>
-              <h2 className="mt-3 text-2xl sm:text-3xl font-bold text-foreground">
+              <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
                 Deine Vorteile
               </h2>
-              <p className="mt-4 mx-auto max-w-2xl text-foreground-light">
+              <p className="mt-4 mx-auto max-w-3xl text-lg text-foreground-light">
                 Von der ersten Beratung bis zum nächsten Job: Du bekommst konkrete Skills, keine Kosten und Begleitung, die wirkt.
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function BenefitsSection() {
                 ))}
               </div>
               <div className="mt-10 flex justify-center">
-                <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+                <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
                   Jetzt beraten lassen
                 </TypeformLink>
               </div>

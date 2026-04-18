@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const SCROLL_START = 150;  // Blob beginnt zu wachsen
 const SCROLL_END = 550;    // Schon hier komplett aufgegangen – bei „Wähle deinen Karriereweg“ weit offen
 const SCALE_MIN = 1;
-const SCALE_MAX = 15; // sehr groß – ganze Seite ist dann komplett blau
+const SCALE_MAX = 15; // sehr groß – ganze Seite ist dann komplett orange eingefärbt
 const TRANSLATE_Y_MAX = 40;
 
 function clamp(value: number, min: number, max: number) {
@@ -34,10 +34,10 @@ export default function HeroScrollBlob() {
   const scale = SCALE_MIN + (SCALE_MAX - SCALE_MIN) * scrollProgress;
   const translateY = TRANSLATE_Y_MAX * scrollProgress;
 
-  // Hell (oben) → Dunkel (voll aufgegangen): für weiße Schrift auf dem Blob
-  const r = Math.round(219 + (30 - 219) * scrollProgress);   // 219 → 30 (primary-dark)
-  const g = Math.round(234 + (64 - 234) * scrollProgress);  // 234 → 64
-  const b = Math.round(254 + (175 - 254) * scrollProgress); // 254 → 175
+  // Hell (Creme/Orange oben) → Dunkelorange (voll aufgegangen): für weiße Schrift auf dem Blob
+  const r = Math.round(255 + (194 - 255) * scrollProgress);   // 255 → #c2410c R
+  const g = Math.round(247 + (65 - 247) * scrollProgress);   // 247 → #c2410c G
+  const b = Math.round(237 + (12 - 237) * scrollProgress);   // 237 → #c2410c B
   const a = 0.4 + 0.55 * scrollProgress; // 0.4 → 0.95
   const backgroundColor = `rgba(${r}, ${g}, ${b}, ${a})`;
   const isFullyOpen = scrollProgress >= 0.99;

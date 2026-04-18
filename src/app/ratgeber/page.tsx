@@ -11,9 +11,19 @@ import { ratgeberArticles, ratgeberCategories } from "@/config/ratgeber.config";
 const base = siteConfig.siteUrl.replace(/\/$/, "");
 
 export const metadata: Metadata = {
-  title: `Ratgeber – Weiterbildung, Bildungsgutschein & Karriere`,
+  title: `Campus-Wissen – Kurse, Live-Format & Qualifizierung | ${siteConfig.seoBrand}`,
   description:
-    "Praxiswissen zu Bildungsgutschein, Weiterbildung, Karrierewechsel und Förderung – verständlich erklärt. Jetzt lesen.",
+    "Orientierung aus dem Itera Campus: Live-Unterricht, AZAV-Maßnahmen, Kurswahl in KI, Vertrieb und Projektmanagement – kompakt und aus Trainer:innen-Sicht.",
+  keywords: [
+    "Itera Campus",
+    "AZAV Maßnahme",
+    "Live-Unterricht",
+    "virtuelles Klassenzimmer",
+    "KI Kurs München",
+    "tech-naher Vertrieb",
+    "agiles Projektmanagement Kurs",
+    "Qualifizierung Agentur für Arbeit",
+  ],
   alternates: { canonical: `${base}/ratgeber` },
 };
 
@@ -21,23 +31,23 @@ export default function RatgeberOverview() {
   return (
     <>
       <Navbar />
-      <main className="relative min-h-screen pt-28 pb-24">
+      <main className="relative min-h-screen pt-36 pb-24">
         <PageBackground />
-        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 page-shell">
           <Breadcrumbs
             items={[
               { label: "Startseite", href: "/" },
-              { label: "Ratgeber" },
+              { label: "Campus-Wissen" },
             ]}
           />
 
           {/* Hero */}
           <section className="text-center mb-12">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              Ratgeber
+              Campus-Wissen
             </h1>
             <p className="mt-5 mx-auto max-w-2xl text-lg text-foreground-light leading-relaxed">
-              Antworten auf die Fragen, die Du Dir vor einer Weiterbildung stellst – von Bildungsgutschein bis Gehalt. Praxiswissen von Forward Education.
+              Kurzantworten rund um unsere Programme: virtuelles Klassenzimmer, Kursrhythmus, AZAV-Nachweise, Zusage der Agentur und typische Einstiegsrollen – ohne generisches Nachschlagewerk.
             </p>
           </section>
 
@@ -76,9 +86,9 @@ export default function RatgeberOverview() {
               Noch Fragen?
             </h2>
             <p className="text-foreground-light mb-6 max-w-lg mx-auto">
-              Wir beraten Dich kostenlos zu Kursen, Bildungsgutschein und Deinen Möglichkeiten.
+              Wir beraten Dich kostenlos zu Kursstarts, AZAV-Maßnahmen und dem Gespräch bei der Agentur – passend zu KI, Vertrieb oder Projektmanagement.
             </p>
-            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
               Kostenlos beraten lassen
             </TypeformLink>
           </section>

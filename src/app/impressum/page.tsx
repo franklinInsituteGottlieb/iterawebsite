@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site.config";
 const base = siteConfig.siteUrl.replace(/\/$/, "");
 export const metadata = {
   title: `Impressum & Datenschutz | ${siteConfig.seoBrand}`,
-  description: "Impressum und Datenschutzerklärung von Forward Education GmbH.",
+  description: "Impressum und Datenschutz – Marke Itera Campus.",
   alternates: { canonical: `${base}/impressum` },
 };
 
@@ -15,9 +15,9 @@ export default function ImpressumPage() {
   return (
     <>
       <Navbar />
-      <main className="relative min-h-screen pt-28 pb-24">
+      <main className="relative min-h-screen pt-36 pb-24">
         <PageBackground />
-        <div className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 page-shell-readable">
           {/* Page Header – wie Section-Header auf der Startseite */}
           <div className="text-center mb-12">
             <span className="block text-sm font-semibold uppercase tracking-widest text-primary">
@@ -32,13 +32,13 @@ export default function ImpressumPage() {
           <nav className="flex flex-wrap justify-center gap-3 mb-14">
             <a
               href="#impressum"
-              className="rounded-full bg-white border border-slate-200 px-5 py-2.5 text-sm font-semibold text-foreground shadow-md shadow-black/5 hover:bg-slate-50 hover:border-primary/30 hover:text-primary"
+              className="rounded-full bg-white border border-slate-200 px-5 py-2.5 text-sm font-semibold text-foreground shadow-md shadow-[#0a1526]/8 hover:bg-slate-50 hover:border-primary/30 hover:text-primary"
             >
               Impressum
             </a>
             <a
               href="#datenschutz"
-              className="rounded-full bg-white border border-slate-200 px-5 py-2.5 text-sm font-semibold text-foreground shadow-md shadow-black/5 hover:bg-slate-50 hover:border-primary/30 hover:text-primary"
+              className="rounded-full bg-white border border-slate-200 px-5 py-2.5 text-sm font-semibold text-foreground shadow-md shadow-[#0a1526]/8 hover:bg-slate-50 hover:border-primary/30 hover:text-primary"
             >
               Datenschutz
             </a>
@@ -47,7 +47,7 @@ export default function ImpressumPage() {
           {/* Content in Glas-Karte – wie Kurse/Vorteile */}
           <div className="rounded-2xl bg-white shadow-lg border border-slate-200 overflow-hidden">
             <div className="p-8 sm:p-10">
-              <section id="impressum" className="scroll-mt-28">
+              <section id="impressum" className="scroll-mt-36">
                 <h2 className="text-xl font-semibold uppercase tracking-widest text-primary mb-3">
                   Impressum
                 </h2>
@@ -56,6 +56,7 @@ export default function ImpressumPage() {
                 </h3>
                 <div className="text-foreground-light leading-relaxed whitespace-pre-line space-y-1">
                   {`${siteConfig.companyLegalName}
+Marke: ${siteConfig.seoBrand}
 Stefan-George-Ring 2
 81929 München
 `}
@@ -64,16 +65,21 @@ Stefan-George-Ring 2
                   </a>
                   {`
 
-Geschäftsführer: ${siteConfig.legal.responsiblePerson}
-Registergericht: ${siteConfig.legal.registerCourt}, ${siteConfig.legal.registerNumber}
+Inhaber / Betrieb: ${siteConfig.legal.responsiblePerson}
 Inhaltlich verantwortlich gem. § 55 RStV:
-${siteConfig.legal.contentResponsible} (Anschrift s.o.)`}
+${siteConfig.legal.contentResponsible} (Anschrift wie oben)${
+                    siteConfig.legal.registerCourt && siteConfig.legal.registerNumber
+                      ? `
+
+Registergericht: ${siteConfig.legal.registerCourt}, ${siteConfig.legal.registerNumber}`
+                      : ""
+                  }`}
                 </div>
               </section>
 
               <hr className="my-12 border-slate-200/80" />
 
-              <section id="datenschutz" className="scroll-mt-28">
+              <section id="datenschutz" className="scroll-mt-36">
                 <h2 className="text-xl font-semibold uppercase tracking-widest text-primary mb-3">
                   Datenschutz
                 </h2>

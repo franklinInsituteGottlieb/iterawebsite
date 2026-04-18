@@ -39,9 +39,9 @@ export default async function ArbeitsagenturPage({ params }: PageProps) {
   return (
     <>
       <Navbar />
-      <main className="relative min-h-screen pt-28 pb-24">
+      <main className="relative min-h-screen pt-36 pb-24">
         <PageBackground />
-        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 page-shell">
           <Breadcrumbs
             items={[
               { label: "Startseite", href: "/" },
@@ -59,7 +59,7 @@ export default async function ArbeitsagenturPage({ params }: PageProps) {
               Die Agentur für Arbeit übernimmt die kompletten Kosten Deiner Weiterbildung. So gehst Du vor.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+              <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
                 Wir helfen Dir beim Antrag
               </TypeformLink>
               <span className="text-sm text-foreground-light">
@@ -190,7 +190,7 @@ export default async function ArbeitsagenturPage({ params }: PageProps) {
             <p className="text-foreground-light mb-6 max-w-lg mx-auto">
               Du musst Dich nicht allein durch den Antrag kämpfen. Wir helfen Dir Schritt für Schritt – von der Vorbereitung bis zum Start.
             </p>
-            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
               Jetzt kostenlos beraten lassen
             </TypeformLink>
             <p className="mt-3 text-xs text-foreground-light">

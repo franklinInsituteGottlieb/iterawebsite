@@ -1,5 +1,5 @@
 /** Basis-URL des Typeform Kurzbewerbungs-Formulars */
-export const TYPEFORM_BASE_URL = "https://form.typeform.com/to/APjxbSz0";
+export const TYPEFORM_BASE_URL = "https://form.typeform.com/to/rO5pLQhB";
 
 /** Kontext für Kurs (aus sessionStorage) – wird an Typeform übergeben */
 export interface CourseContext {
@@ -21,11 +21,11 @@ export function buildTypeformUrl(
   utmOverride?: TypeformUtmParams
 ): string {
   const base = new URL(TYPEFORM_BASE_URL);
-  base.searchParams.set("typeform-source", "forward-education.de");
+  base.searchParams.set("typeform-source", "iteracampus.de");
 
   if (params) {
     base.searchParams.set("course_id", params.course_id);
-    base.searchParams.set("utm_source", "forward-education");
+    base.searchParams.set("utm_source", "itera-campus");
     base.searchParams.set("course_type", params.course_type);
     base.searchParams.set("course_duration", String(params.course_duration));
   }

@@ -1,4 +1,4 @@
-# SEO-Audit – Forward Education
+# SEO-Audit – Itera Campus
 
 **Stand:** März 2025  
 **Methode:** Skill „seo-audit“ (Crawlability → Technical → On-Page → Content → Authority)
@@ -75,9 +75,9 @@
 
 ### Title Tags
 - **Status:** ✅ Pro Seite eindeutig  
-- Layout: „Forward Education – Weiterbildung. Weiterkommen.“  
+- Layout: „Itera Campus – Weiterbildung. Weiterkommen.“  
 - Kurse, Standorte, Ratgeber, Arbeitsagentur, Impressum: jeweils eigener Title mit Brand am Ende.  
-- **Hinweis:** Sehr lange Titles (z. B. Standort+Kurs+Brand) können in der SERP gekürzt werden – optional kürzere Varianten prüfen (z. B. „Künstliche Intelligenz Weiterbildung München – 100 % gefördert | Forward Education“ ~65 Zeichen).
+- **Hinweis:** Sehr lange Titles (z. B. Standort+Kurs+Brand) können in der SERP gekürzt werden – optional kürzere Varianten prüfen (z. B. „Künstliche Intelligenz Weiterbildung München – 100 % gefördert | Itera Campus“ ~65 Zeichen).
 
 ### Meta Descriptions
 - **Status:** ✅ Vorhanden und unterschiedlich  
@@ -97,7 +97,7 @@
 
 ### Bilder
 - **Status:** ✅ Inhaltsbilder mit Alt-Text  
-- CoursesSection: Alt pro Kurs („… – Forward Education“).  
+- CoursesSection: Alt pro Kurs („… – Itera Campus“).  
 - Footer/Navbar: Logo-Alt mit Firmenname.  
 - Dekorative Hero-Bilder (Kurs/Course) mit `alt=""` – WCAG-konform.
 

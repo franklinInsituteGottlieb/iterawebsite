@@ -7,40 +7,40 @@ export interface RatgeberArticle {
 }
 
 export const ratgeberCategories = [
-  { slug: "bildungsgutschein", label: "Bildungsgutschein" },
-  { slug: "karriere", label: "Karriere & Berufswechsel" },
-  { slug: "weiterbildung", label: "Weiterbildung" },
-  { slug: "foerderung", label: "Förderung" },
+  { slug: "bildungsgutschein", label: "Antrag, Zusage & Unterlagen" },
+  { slug: "karriere", label: "Rollen, Einstieg & zweite Karriere" },
+  { slug: "weiterbildung", label: "Methoden, Tools & Lernformate" },
+  { slug: "foerderung", label: "AZAV, Leistungen & Rechte" },
 ] as const;
 
 export const ratgeberArticles: RatgeberArticle[] = [
   {
     slug: "was-ist-ein-bildungsgutschein",
-    title: "Was ist ein Bildungsgutschein?",
+    title: "Die Zusage der Agentur für Deinen Kurs – was sie praktisch bedeutet",
     description:
-      "Alles Wichtige zum Bildungsgutschein: Wer ihn bekommt, wie Du ihn beantragst und welche Weiterbildungen damit gefördert werden.",
+      "Aus Kurs- und Trägersicht: was die Zusage regelt, wer sie bekommt und wie Du von der Beratung zu einer buchbaren AZAV-Maßnahme kommst.",
     category: "bildungsgutschein",
-    content: `## Was ist ein Bildungsgutschein?
+    content: `## Was die Zusage der Agentur für Deinen Kurs bedeutet
 
-Ein Bildungsgutschein ist eine Zusicherung der Agentur für Arbeit oder des Jobcenters, die Kosten einer beruflichen Weiterbildung vollständig zu übernehmen. Er richtet sich an Arbeitssuchende, von Arbeitslosigkeit bedrohte Personen und Beschäftigte, die sich beruflich weiterentwickeln möchten.
+Die Zusage (häufig als Gutschein der Agentur oder des Jobcenters bezeichnet) ist eine schriftliche Zusicherung, bestimmte Kosten einer beruflichen Qualifizierung zu übernehmen. Sie richtet sich typischerweise an Arbeitssuchende, von Arbeitslosigkeit Bedrohte und Personen, die sich mit einer klar begründeten Maßnahme beruflich neu aufstellen möchten.
 
-## Wer hat Anspruch auf einen Bildungsgutschein?
+## Wer bekommt typischerweise eine Zusage?
 
 - **Arbeitssuchende**, die bei der Agentur für Arbeit oder dem Jobcenter gemeldet sind
 - **Von Arbeitslosigkeit bedrohte** Arbeitnehmer:innen
-- Voraussetzung: Eine individuelle Beratung durch die Agentur für Arbeit
+- Voraussetzung: ein individuelles Beratungsgespräch – dort wird Dein Bedarf dokumentiert
 
-## Wie beantragst Du den Bildungsgutschein?
+## Von der Beratung bis zur Kursbuchung
 
 1. **Beratungsgespräch** bei Deiner Agentur für Arbeit oder Deinem Jobcenter vereinbaren
-2. **Weiterbildungsziel besprechen** – welchen Kurs möchtest Du machen?
-3. **Bildungsgutschein erhalten** – nach positivem Bescheid erhältst Du den Gutschein
-4. **AZAV-zertifizierten Anbieter wählen** – der Bildungsträger muss zertifiziert sein
-5. **Weiterbildung starten** – die Kosten übernimmt die Agentur für Arbeit
+2. **Qualifizierungsziel besprechen** – welche Maßnahme (z. B. KI, Vertrieb, Projektmanagement) passt?
+3. **Schriftliche Zusage** – nach positivem Bescheid erhältst Du die gebündelten Leistungen
+4. **AZAV-zertifizierten Anbieter wählen** – Maßnahme und Träger müssen passend zertifiziert sein
+5. **Kursstart** – die Abrechnung läuft in der Regel direkt zwischen Agentur und Träger
 
-## Was wird gefördert?
+## Welche Kostenpakete sind oft drin?
 
-Der Bildungsgutschein deckt in der Regel ab:
+Eine Zusage der Agentur kann in der Regel u. a. abdecken:
 - Lehrgangsgebühren (bis zu 100 %)
 - Fahrtkosten
 - Kinderbetreuungskosten
@@ -49,19 +49,19 @@ Der Bildungsgutschein deckt in der Regel ab:
 
 Welche Kosten in Deinem Fall übernommen werden, klärst Du im Beratungsgespräch mit der Agentur für Arbeit.
 
-## Warum Forward Education?
+## Wie Itera Campus beim Einstieg hilft
 
-Unsere Kurse in Künstlicher Intelligenz, Sales und Projektmanagement sind AZAV-zertifiziert und werden vom Bildungsgutschein vollständig abgedeckt. Wir beraten Dich kostenlos und unverbindlich zu Deinen Fördermöglichkeiten.`,
+Unsere Programme in KI, tech-nahem Vertrieb und Projektmanagement sind AZAV-zertifiziert – damit sind sie grundsätzlich für die übliche staatliche Kostenübernahme über die Agentur infrage, sofern diese im Einzelfall bewilligt wird. Wir klären mit Dir vorab Kursfit, Unterlagen und den Ablauf – kostenlos und unverbindlich.`,
   },
   {
     slug: "bildungsgutschein-beantragen-schritt-fuer-schritt",
-    title: "Bildungsgutschein beantragen – Schritt für Schritt",
+    title: "Vom Erstgespräch zur fixen Kursbuchung – Ablauf im Überblick",
     description:
-      "Detaillierte Anleitung: So beantragst Du den Bildungsgutschein bei der Agentur für Arbeit oder dem Jobcenter.",
+      "Chronologischer Fahrplan: Termin, Unterlagen, Maßnahmenbeschreibung und Einlösung bei einem AZAV-Anbieter – so, wie wir ihn mit Teilnehmer:innen durchgehen.",
     category: "bildungsgutschein",
-    content: `## Bildungsgutschein beantragen: So gehst Du vor
+    content: `## Vom Erstgespräch zur fixen Kursbuchung
 
-Der Bildungsgutschein ist Dein Schlüssel zur geförderten Weiterbildung. Damit Du ihn bekommst, musst Du einige Schritte beachten.
+Eine staatlich mitfinanzierte Qualifizierung startet mit einem klaren Fahrplan. Diese Schritte begleiten wir im Itera Campus typischerweise gemeinsam mit Dir.
 
 ## Schritt 1: Termin bei der Agentur für Arbeit vereinbaren
 
@@ -76,32 +76,32 @@ Im Gespräch erklärst Du, warum die Weiterbildung Deine Chancen auf dem Arbeits
 
 ## Schritt 3: Bildungsangebot vorlegen
 
-Zeige dem/der Berater:in ein konkretes Kursangebot eines zertifizierten Trägers. Bei Forward Education erhältst Du alle nötigen Unterlagen für die Agentur.
+Zeige dem/der Berater:in ein konkretes Kursangebot eines zertifizierten Trägers. Bei Itera Campus erhältst Du alle nötigen Unterlagen für die Agentur.
 
 ## Schritt 4: Bescheid abwarten
 
-Die Agentur prüft Deinen Antrag. Bei positiver Entscheidung erhältst Du den Bildungsgutschein – in der Regel innerhalb weniger Wochen.
+Die Agentur prüft Deinen Antrag. Bei positiver Entscheidung erhältst Du die Zusage – in der Regel innerhalb weniger Wochen.
 
 ## Schritt 5: Kurs buchen und starten
 
-Löse den Bildungsgutschein beim Bildungsträger ein und starte Deine Weiterbildung. Die Kosten werden direkt von der Agentur übernommen.
+Du reichst die Zusage beim gewählten AZAV-Träger ein und startest die Maßnahme. Die Abrechnung der Leistungen läuft in der Regel direkt über die Agentur.
 
-## Tipps für die Beantragung
+## Tipps aus der Campus-Praxis
 
 - **Frühzeitig anfragen** – der Prozess kann einige Wochen dauern
 - **Konkret werden** – nenne einen bestimmten Kurs und Anbieter
-- **AZAV-Zertifizierung prüfen** – nur zertifizierte Kurse werden gefördert
-- **Kostenlose Beratung nutzen** – Forward Education hilft Dir bei der Vorbereitung`,
+- **AZAV-Zertifizierung prüfen** – nur zertifizierte Maßnahmen passen in den üblichen Rahmen
+- **Kostenlose Beratung nutzen** – Itera Campus hilft Dir bei der Vorbereitung`,
   },
   {
     slug: "quereinsteiger-it-so-gelingt-der-einstieg",
-    title: "Quereinsteiger IT – So gelingt der Einstieg",
+    title: "Ohne Informatikstudium in tech-nahe Rollen – realistische Einstiege",
     description:
-      "Du willst in die IT-Branche wechseln? Erfahre, welche Wege es gibt, welche Skills gefragt sind und wie eine Weiterbildung den Einstieg erleichtert.",
+      "Welche Rollen neben klassischer Entwicklung infrage kommen, welche Kompetenzen im Live-Kurs trainiert werden und wie Du Dich für Bewerbungsgespräche positionierst.",
     category: "karriere",
-    content: `## Quereinsteiger in der IT: Deine Chancen
+    content: `## Tech-Rollen ohne klassisches Informatikstudium
 
-Die IT-Branche sucht dringend Fachkräfte – und das nicht nur mit Informatik-Studium. Quereinsteiger:innen sind in vielen Bereichen willkommen, besonders in:
+Die Branche sucht Profile jenseits klassischer Entwicklung – oft mit Fokus auf Anwendung, Vertrieb und Steuerung von Projekten. Typische Einstiegsfelder im Itera Campus:
 - Künstliche Intelligenz & Machine Learning
 - IT-Vertrieb (Sales)
 - Projektmanagement (agil & klassisch)
@@ -125,25 +125,25 @@ Die IT-Branche sucht dringend Fachkräfte – und das nicht nur mit Informatik-S
 
 ## So gelingt der Quereinstieg
 
-1. **Weiterbildung wählen** – Eine zertifizierte Weiterbildung gibt Dir das nötige Wissen und einen anerkannten Nachweis
-2. **Förderung nutzen** – Mit dem Bildungsgutschein wird die Weiterbildung bis zu 100 % gefördert
-3. **Praxis sammeln** – Unsere Kurse arbeiten mit realen Projekten und Case Studies
-4. **Netzwerk aufbauen** – Im Kurs lernst Du Gleichgesinnte und Branchenkontakte kennen
+1. **Qualifizierung wählen** – Eine AZAV-Maßnahme liefert Dir strukturierten Unterricht, Nachweise und Projekterfahrung
+2. **Förderweg prüfen** – staatliche Kostenübernahme ist im Einzelfall möglich; wir bereiten Dich auf das Gespräch vor
+3. **Praxis sammeln** – unsere Kurse arbeiten mit realen Projekten und Case Studies
+4. **Netzwerk aufbauen** – im Live-Format lernst Du Gleichgesinnte und Branchenkontakte kennen
 5. **Bewerbung vorbereiten** – Karriereberatung und Bewerbungscoaching sind bei uns inklusive
 
 ## Warum gerade jetzt?
 
-Der Fachkräftemangel in der IT ist so groß wie nie. Unternehmen sind bereit, in motivierte Quereinsteiger:innen zu investieren. Eine gezielte Weiterbildung ist der schnellste Weg in den neuen Job.`,
+Nachfrage in digitalen Rollen bleibt hoch. Unternehmen honorieren klare Profile und Nachweise – genau darauf zielen unsere Programme ab.`,
   },
   {
     slug: "karriere-mit-kuenstlicher-intelligenz",
-    title: "Karriere mit Künstlicher Intelligenz – Berufsbilder und Chancen",
+    title: "KI im Job: Rollen jenseits von „reinem Programmieren“",
     description:
-      "Welche Berufe entstehen durch KI? Erfahre, welche Karrierewege es gibt und wie Du Dich mit einer KI-Weiterbildung positionierst.",
+      "Anwendung, Steuerung und Projektbezug von KI-Systemen – welche Profile Unternehmen suchen und wie unser Kursformat darauf vorbereitet.",
     category: "karriere",
-    content: `## KI-Berufe: Diese Jobs sind gefragt
+    content: `## Profile rund um KI-Anwendung
 
-Künstliche Intelligenz verändert die Arbeitswelt grundlegend. Neue Berufsbilder entstehen, bestehende wandeln sich. Hier die wichtigsten KI-Karrierewege:
+KI verändert Teams – weniger „Laborforschung", mehr Integration in Produkte, Service und Projekte. Typische Rollen, die wir im Campus-Schwerpunkt vorbereiten:
 
 ### KI-Anwendungsspezialist:in
 Du setzt KI-Tools im Unternehmen ein – von Chatbots über Dokumentenanalyse bis hin zu Prozessautomatisierung. Kein Programmierstudium nötig.
@@ -165,13 +165,13 @@ Du leitest Projekte zur Einführung von KI-Lösungen – von der Planung bis zum
 
 ## Dein Weg in die KI-Karriere
 
-Eine praxisnahe Weiterbildung vermittelt Dir die Grundlagen von Machine Learning, Prompt Engineering und KI-Anwendung im Geschäftsalltag – auch ohne IT-Vorkenntnisse. Mit dem Bildungsgutschein ist die Weiterbildung bis zu 100 % gefördert.`,
+Ein strukturiertes Kursprogramm vermittelt Grundlagen von Machine Learning, Prompt-Arbeit und KI im Geschäftsalltag – auch ohne IT-Vorkenntnisse. AZAV-Maßnahmen können mit staatlicher Kostenübernahme kombiniert werden, sofern die Agentur im Einzelfall bewilligt.`,
   },
   {
     slug: "azav-zertifizierung-was-bedeutet-das",
-    title: "AZAV-Zertifizierung – Was bedeutet das?",
+    title: "AZAV für Maßnahmen: was geprüft wird und warum es Dich betrifft",
     description:
-      "Was steckt hinter der AZAV-Zertifizierung? Warum sie für Deine Weiterbildung wichtig ist und wie Du davon profitierst.",
+      "Qualitätsrahmen für anerkannte Maßnahmen: Prüfpunkte, Abschlüsse und warum nur zertifizierte Angebote in staatlich unterstützte Qualifizierung passen.",
     category: "foerderung",
     content: `## Was ist die AZAV-Zertifizierung?
 
@@ -179,7 +179,7 @@ AZAV steht für „Akkreditierungs- und Zulassungsverordnung Arbeitsförderung".
 
 ## Warum ist AZAV wichtig?
 
-Nur AZAV-zertifizierte Kurse können über den Bildungsgutschein finanziert werden. Die Zertifizierung garantiert:
+Nur AZAV-zertifizierte Maßnahmen passen in den üblichen Rahmen staatlicher Qualifizierungsförderung. Die Zertifizierung garantiert:
 - **Qualitätsstandards** – Regelmäßige Prüfung der Lehrinhalte und Dozent:innen
 - **Anerkannte Abschlüsse** – Zertifikate werden von Arbeitgebern akzeptiert
 - **Förderungsfähigkeit** – bis zu 100 % Kostenübernahme durch die Agentur für Arbeit möglich
@@ -191,47 +191,47 @@ Nur AZAV-zertifizierte Kurse können über den Bildungsgutschein finanziert werd
 - Infrastruktur und Lernumgebung
 - Erfolgsquoten und Teilnehmerzufriedenheit
 
-## Forward Education ist AZAV-zertifiziert
+## Itera Campus ist AZAV-zertifiziert
 
-Alle unsere Weiterbildungen in Künstlicher Intelligenz, Sales und Projektmanagement tragen das AZAV-Zertifikat. Das bedeutet: Du kannst den Bildungsgutschein bei uns einlösen und ohne eigene Kosten an einer hochwertigen Weiterbildung teilnehmen.`,
+Alle Programme in KI, tech-nahem Vertrieb und Projektmanagement sind als AZAV-Maßnahmen aufgestellt. Heißt konkret: Du kannst eine bewilligte Zusage der Agentur bei uns einlösen – ohne Lehrgangsgebühren aus eigener Tasche, sofern die Agentur die Kosten übernimmt.`,
   },
   {
     slug: "weiterbildung-waehrend-arbeitslosigkeit",
-    title: "Weiterbildung während Arbeitslosigkeit – Rechte und Möglichkeiten",
+    title: "Qualifizieren, während Du suchst: Rechte, Pausen & sinnvolle Schritte",
     description:
-      "Du bist arbeitssuchend und möchtest Dich weiterbilden? Erfahre, welche Förderungen es gibt und wie Du die Zeit sinnvoll nutzt.",
+      "Was Du im Beratungsgespräch klären solltest, wie Du Lücken im Lebenslauf sinnvoll füllst und wie ein strukturierter Kursstart dabei hilft.",
     category: "foerderung",
-    content: `## Weiterbildung als Chance in der Arbeitslosigkeit
+    content: `## Qualifizieren statt Leerlauf
 
-Eine Phase der Arbeitslosigkeit muss kein Stillstand sein. Mit einer geförderten Weiterbildung kannst Du die Zeit nutzen, um Dich für den nächsten Karriereschritt zu qualifizieren.
+Suchphasen lassen sich nutzen, um handfeste Kompetenzen und Nachweise aufzubauen – besonders, wenn Du später in KI-, Vertriebs- oder PM-Rollen einsteigen willst.
 
-## Welche Förderungen gibt es?
+## Welche staatlichen Leistungen kommen infrage?
 
-### Bildungsgutschein
-Die wichtigste Förderung: Die Agentur für Arbeit kann mit dem Bildungsgutschein bis zu 100 % der Kosten einer AZAV-zertifizierten Weiterbildung übernehmen.
+### Zusage der Agentur (häufig „Bildungsgutschein")
+Die Agentur kann unter definierten Voraussetzungen bis zu 100 % der Kosten einer AZAV-Maßnahme übernehmen – Details stehen im Beratungsgespräch.
 
 ## Deine Rechte
 
 - Du hast ein Recht auf Beratung durch die Agentur für Arbeit
-- Einen Rechtsanspruch auf den Bildungsgutschein gibt es nicht, aber die Agentur muss Deinen Antrag wohlwollend prüfen
+- Einen Rechtsanspruch auf eine Zusage gibt es nicht, aber die Agentur muss Deinen Antrag wohlwollend prüfen
 - Du darfst den Bildungsträger frei wählen (sofern AZAV-zertifiziert)
 
 ## So startest Du
 
-1. Informiere Dich über passende Weiterbildungen (z. B. KI, Sales, Projektmanagement)
+1. Prüfe, welche Campus-Maßnahme zu Deinem Ziel passt (KI, Vertrieb, Projektmanagement)
 2. Vereinbare ein Beratungsgespräch bei der Agentur für Arbeit
 3. Lege ein konkretes Kursangebot vor (wir stellen Dir alle Unterlagen bereit)
-4. Starte Deine Weiterbildung und nutze die Zeit aktiv
+4. Starte die Maßnahme und nutze die Zeit strukturiert
 
 ## Tipp
 
-Kontaktiere uns für eine kostenlose Beratung – wir helfen Dir, das richtige Angebot zu finden und bereiten Dich auf das Gespräch mit der Agentur für Arbeit vor.`,
+Kontaktiere uns für eine kostenlose Beratung – wir helfen Dir bei der Kurswahl und beim Unterlagenpaket für die Agentur.`,
   },
   {
     slug: "gehalt-it-vertrieb",
-    title: "Gehalt im IT-Vertrieb – Was verdienst Du als IT-Sales-Manager?",
+    title: "Fix, variabel, Region: Vergütung im tech-nahen Vertrieb",
     description:
-      "Überblick über Gehälter im IT-Vertrieb: Einstiegsgehalt, Erfahrungsstufen und was Du tun kannst, um mehr zu verdienen.",
+      "Bandbreiten für SDR-, AE- und Lead-Rollen, Einflussfaktoren und was im Bewerbungsgespräch realistisch verhandelbar ist.",
     category: "karriere",
     content: `## Gehalt im IT-Vertrieb: Ein Überblick
 
@@ -257,17 +257,17 @@ OTE = On Target Earnings (Fixgehalt + erreichbare Provision)
 
 ## IT-Sales als Quereinsteiger
 
-Mit einer Weiterbildung im IT-Vertrieb kannst Du auch ohne IT-Studium in diese lukrative Branche einsteigen. Wichtig sind Kommunikationsstärke, Beratungskompetenz und Grundverständnis für IT-Produkte – genau das vermitteln wir in unserem Sales-Kurs.`,
+Mit der strukturierten Vertriebsmaßnahme im Campus kannst Du auch ohne IT-Studium in diese lukrative Branche einsteigen. Wichtig sind Kommunikationsstärke, Beratungskompetenz und Grundverständnis für IT-Produkte – genau das trainieren wir im Sales-Kurs.`,
   },
   {
     slug: "was-ist-machine-learning",
-    title: "Was ist Machine Learning? – Einfach erklärt",
+    title: "Machine Learning im Alltag von Teams – Begriffe ohne Mathe-Falle",
     description:
-      "Machine Learning verständlich erklärt: Was es ist, wie es funktioniert und warum es für Deine Karriere relevant ist.",
+      "Trainingsdaten, Modelle, Nutzen im Büroalltag: ein kompakter Leitfaden für Menschen, die KI-Anwendungen steuern, nicht Forschung betreiben.",
     category: "weiterbildung",
-    content: `## Machine Learning einfach erklärt
+    content: `## Machine Learning ohne Mathe-Falle
 
-Machine Learning (maschinelles Lernen) ist ein Teilbereich der Künstlichen Intelligenz. Anstatt einem Computer genaue Anweisungen zu geben, lernt er aus Daten und verbessert sich selbst.
+Machine Learning (maschinelles Lernen) ist ein Teilbereich der Künstlichen Intelligenz. Statt jeden Schritt vorzuschreiben, erkennen Modelle Muster in Daten und verbessern Vorhersagen über Feedback.
 
 ## Wie funktioniert Machine Learning?
 
@@ -291,19 +291,19 @@ Machine Learning (maschinelles Lernen) ist ein Teilbereich der Künstlichen Inte
 - Bilderkennung und -verarbeitung
 - Predictive Maintenance in der Industrie
 
-## Machine Learning lernen
+## Machine Learning im KI-Programm
 
-In unserer KI-Weiterbildung lernst Du die Grundlagen von Machine Learning praxisnah – von der Theorie bis zur Anwendung mit echten Daten. Vorkenntnisse in Programmierung sind nicht nötig.`,
+Im Campus-Kurs arbeitest Du die Grundlagen praxisnah ab – von der Idee bis zu kleinen Datenübungen. Programmierkenntnisse sind keine Pflicht.`,
   },
   {
     slug: "scrum-erklaert-agiles-projektmanagement",
-    title: "Scrum erklärt – Agiles Projektmanagement für Einsteiger",
+    title: "Scrum im Kursalltag: Rollen, Rhythmus und was wirklich zählt",
     description:
-      "Was ist Scrum? Rollen, Events und Artefakte einfach erklärt. Der perfekte Einstieg in agiles Projektmanagement.",
+      "Kurzüberblick für Einsteiger:innen, die agiles Arbeiten im Team verstehen wollen – passend zu Live-Projekten und Moderation im Unterricht.",
     category: "weiterbildung",
-    content: `## Was ist Scrum?
+    content: `## Scrum in einem Satz
 
-Scrum ist ein Framework für agiles Projektmanagement. Es wurde ursprünglich für Softwareentwicklung entwickelt, wird heute aber in vielen Bereichen eingesetzt – von Marketing bis Produktentwicklung.
+Scrum ist ein Framework für agiles Projektmanagement. Ursprünglich aus der Softwareentwicklung, heute Standard in vielen Teams – von Marketing bis Produktentwicklung.
 
 ## Die drei Scrum-Rollen
 
@@ -329,23 +329,23 @@ Das Team, das die Arbeit umsetzt. Typischerweise 3–9 Personen, selbstorganisie
 
 Ein Sprint ist ein fester Zeitraum (meist 2 Wochen), in dem ein fertiges Inkrement geliefert wird. Am Ende jedes Sprints steht ein nutzbares Ergebnis.
 
-## Scrum lernen
+## Scrum im PM-Programm
 
-In unserer Projektmanagement-Weiterbildung lernst Du Scrum von Grund auf – inklusive Praxis mit echten Projekten und Vorbereitung auf die Scrum-Zertifizierung.`,
+Wir starten mit Rollen, Events und einem echten Sprint-Setup – inklusive Vorbereitung auf gängige Scrum-Zertifizierungen.`,
   },
   {
     slug: "bildungsgutschein-tipps-beratungsgespraech",
-    title: "Bildungsgutschein: Tipps für das Beratungsgespräch",
+    title: "Beratungsgespräch souverän führen: Argumente, Belege, typische Stolpersteine",
     description:
-      "So überzeugst Du im Beratungsgespräch bei der Agentur für Arbeit. Tipps für die Vorbereitung und häufige Fehler.",
+      "Checkliste aus der Begleitung von Kursstartern: welche Nachweise überzeugen, wie Du Dein Maßnahmenziel klar machst und welche Formulungen unnötig bremsen.",
     category: "foerderung",
     content: `## Beratungsgespräch bei der Agentur für Arbeit: So bereitest Du Dich vor
 
-Das Beratungsgespräch bei der Agentur für Arbeit ist der entscheidende Schritt zum Bildungsgutschein. Eine gute Vorbereitung erhöht Deine Chancen deutlich.
+Das Beratungsgespräch ist der Dreh- und Angelpunkt für eine mögliche Zusage. Eine gute Vorbereitung erhöht Deine Chancen deutlich.
 
 ## Was Du mitbringen solltest
 
-- **Konkretes Kursangebot** eines AZAV-zertifizierten Bildungsträgers (z. B. von Forward Education)
+- **Konkretes Kursangebot** eines AZAV-zertifizierten Bildungsträgers (z. B. von Itera Campus)
 - **Begründung**, warum die Weiterbildung Deine Jobchancen verbessert
 - **Lebenslauf** – zeigt Deinen bisherigen Werdegang und die Lücke, die Du schließen willst
 - **Stellenanzeigen** – zeige, dass es Jobs gibt, für die Du Dich mit der Weiterbildung qualifizierst
@@ -353,15 +353,15 @@ Das Beratungsgespräch bei der Agentur für Arbeit ist der entscheidende Schritt
 ## Häufige Fehler vermeiden
 
 ### Zu vage sein
-Sage nicht „Ich möchte mich weiterbilden". Sage stattdessen: „Ich möchte eine AZAV-zertifizierte Weiterbildung in Künstlicher Intelligenz bei Forward Education machen, um als KI-Anwendungsspezialist:in zu arbeiten."
+Sage nicht „Ich möchte mich weiterbilden". Sage stattdessen: „Ich möchte die AZAV-Maßnahme Künstliche Intelligenz bei Itera Campus absolvieren, um als KI-Anwendungsspezialist:in zu starten."
 
 ### Kein konkretes Angebot
-Ohne ein Kursangebot kann die Agentur nicht prüfen, ob die Weiterbildung förderfähig ist. Wir stellen Dir alle Unterlagen bereit.
+Ohne ein Kursangebot kann die Agentur nicht prüfen, ob die Maßnahme förderfähig ist. Wir stellen Dir alle Unterlagen bereit.
 
 ### Arbeitsmarktbedarf nicht belegen
 Zeige, dass es Nachfrage gibt: Stellenanzeigen, Branchenberichte oder Gehaltsvergleiche untermauern Dein Argument.
 
-## So hilft Forward Education
+## So hilft Itera Campus
 
 1. Wir erstellen Dir eine vollständige Maßnahmenübersicht mit AZAV-Nachweis
 2. Wir bereiten Dich auf das Gespräch vor
@@ -377,13 +377,13 @@ Kontaktiere uns für eine kostenlose Beratung – wir helfen Dir, das Beratungsg
 
   {
     slug: "bildungsgutschein-abgelehnt",
-    title: "Bildungsgutschein abgelehnt – Was tun?",
+    title: "Wenn die Zusage ausbleibt: nächste Schritte ohne Panik",
     description:
-      "Dein Bildungsgutschein wurde abgelehnt? Erfahre die häufigsten Gründe und welche Schritte Du jetzt unternehmen kannst.",
+      "Typische Ablehnungsgründe, saubere Nachfass-Strategie und wie Du Unterlagen schärfst, bevor Du erneut in die Beratung gehst.",
     category: "bildungsgutschein",
-    content: `## Bildungsgutschein abgelehnt: Das kannst Du tun
+    content: `## Wenn die Zusage ausbleibt: Das kannst Du tun
 
-Eine Ablehnung ist ärgerlich, aber kein Grund aufzugeben. In vielen Fällen lässt sich die Entscheidung ändern.
+Eine Ablehnung ist ärgerlich, aber kein Grund aufzugeben. In vielen Fällen lässt sich die Entscheidung mit besserer Dokumentation nachjustieren.
 
 ## Häufige Gründe für eine Ablehnung
 
@@ -405,17 +405,17 @@ Wir helfen Dir kostenlos bei der Vorbereitung: Welche Argumente funktionieren, w
 
 ## Tipp
 
-Lass Dich nicht entmutigen. Viele Teilnehmer:innen bei uns haben den Bildungsgutschein beim zweiten Anlauf erhalten – mit besserer Vorbereitung und den richtigen Argumenten.`,
+Lass Dich nicht entmutigen. Viele Teilnehmer:innen bei uns haben die Zusage beim zweiten Anlauf erhalten – mit besserer Vorbereitung und den richtigen Argumenten.`,
   },
   {
     slug: "bildungsgutschein-voraussetzungen",
-    title: "Bildungsgutschein Voraussetzungen – Wer hat Anspruch?",
+    title: "Wer bekommt die Zusage – und welche Nachweise die Agentur prüft",
     description:
-      "Alle Voraussetzungen für den Bildungsgutschein: Wer Anspruch hat, welche Bedingungen gelten und wie Du Dich vorbereitest.",
+      "Status, Beratungspflicht, Plausibilität der Maßnahme und AZAV-Pflicht: die Punkte, die in der Praxis am häufigsten eine Rolle spielen.",
     category: "bildungsgutschein",
-    content: `## Wer bekommt einen Bildungsgutschein?
+    content: `## Wer bekommt eine Zusage?
 
-Der Bildungsgutschein wird von der Agentur für Arbeit oder dem Jobcenter ausgestellt. Es gibt keinen Rechtsanspruch, aber klare Voraussetzungen, die Deine Chancen erhöhen.
+Die Zusage erteilt die Agentur für Arbeit oder das Jobcenter nach Beratung. Es gibt keinen Rechtsanspruch, aber klare Voraussetzungen, die Deine Chancen erhöhen.
 
 ## Die wichtigsten Voraussetzungen
 
@@ -432,7 +432,7 @@ Du musst ein Beratungsgespräch bei Deiner Agentur für Arbeit geführt haben. D
 Die Weiterbildung muss Deine Chancen auf dem Arbeitsmarkt verbessern – entweder um eine Arbeitslosigkeit zu beenden oder zu vermeiden.
 
 ### 4. AZAV-Zertifizierung
-Der Kurs muss bei einem AZAV-zertifizierten Bildungsträger stattfinden. Alle Kurse von Forward Education sind AZAV-zertifiziert.
+Der Kurs muss bei einem AZAV-zertifizierten Bildungsträger stattfinden. Alle Kurse von Itera Campus sind AZAV-zertifiziert.
 
 ## Was spricht für eine Bewilligung?
 
@@ -456,24 +456,24 @@ Kontaktiere uns für eine kostenlose Beratung. Wir prüfen Deine Voraussetzungen
   },
   {
     slug: "bildungsgutschein-gueltigkeitsdauer",
-    title: "Bildungsgutschein Gültigkeitsdauer – Was Du wissen musst",
+    title: "Fristen auf dem Zettel: Gültigkeit, Kursstart und was bei Verzögerung passiert",
     description:
-      "Wie lange ist ein Bildungsgutschein gültig? Was passiert, wenn er abläuft? Alles zur Gültigkeitsdauer und Fristen.",
+      "Wie Du Starttermine mit Gültigkeit abstimmst, wann ein Nachfassen sinnvoll ist und wie wir beim Timing der Kurswahl unterstützen.",
     category: "bildungsgutschein",
-    content: `## Wie lange ist ein Bildungsgutschein gültig?
+    content: `## Wie lange ist eine Zusage gültig?
 
-Ein Bildungsgutschein ist in der Regel zeitlich befristet, regional begrenzt und auf ein bestimmtes Bildungsziel beschränkt. Die genaue Gültigkeitsdauer legt Deine Agentur für Arbeit im Beratungsgespräch fest.
+Die Zusage ist in der Regel zeitlich befristet, regional begrenzt und auf ein bestimmtes Bildungsziel beschränkt. Die genaue Gültigkeit legt Deine Agentur im Beratungsgespräch fest.
 
-## Was steht im Bildungsgutschein?
+## Was steht in der Zusage?
 
 - **Bildungsziel** – Welche Art von Weiterbildung Du machen darfst (z. B. KI, Sales, Projektmanagement)
 - **Gültigkeitsdauer** – Bis wann Du die Weiterbildung beginnen musst
 - **Regionale Begrenzung** – In welcher Region die Weiterbildung stattfinden darf
 - **Dauer der Maßnahme** – Wie lange die Weiterbildung maximal dauern darf
 
-## Was passiert, wenn der Gutschein abläuft?
+## Was passiert bei Fristablauf?
 
-Wenn Du den Bildungsgutschein nicht innerhalb der Gültigkeitsdauer einlöst, verfällt er. Du kannst aber erneut einen Termin bei der Agentur für Arbeit vereinbaren und einen neuen Gutschein beantragen.
+Wenn Du die Zusage nicht innerhalb der Gültigkeit einlöst, verfällt sie. Du kannst aber erneut einen Termin bei der Agentur vereinbaren und einen neuen Antrag stellen.
 
 ## Tipps zur Planung
 
@@ -487,9 +487,9 @@ Kontaktiere uns für eine kostenlose Beratung. Wir helfen Dir, den passenden Kur
   },
   {
     slug: "umschulung-mit-40",
-    title: "Umschulung mit 40 – Tipps für den Neustart",
+    title: "Zweite Karrierehälfte planen: Erfahrung nutzen, Rolle neu schärfen",
     description:
-      "Berufliche Neuorientierung mit 40+? Erfahre, warum es nie zu spät ist und wie Du den Umstieg erfolgreich meisterst.",
+      "Warum 40+ oft ein Vorteil ist, welche Rollen zu Softskills passen und wie Du Deinen Lernweg ohne Überforderung strukturierst.",
     category: "karriere",
     content: `## Umschulung mit 40: Warum es sich lohnt
 
@@ -500,7 +500,7 @@ Mit 40+ hast Du noch mindestens 25 Berufsjahre vor Dir. Eine Umschulung kann der
 - **Lebenserfahrung** – Soft Skills wie Verantwortungsbewusstsein und Stressresilienz sind im Berufsalltag Gold wert
 - **Klarheit** – Du weißt besser als mit 20, was Du willst und was nicht
 - **Netzwerk** – Du hast bereits berufliche Kontakte, die Dir beim Wiedereinstieg helfen
-- **Förderung** – Mit dem Bildungsgutschein kostet Dich die Umschulung keinen Cent
+- **Förderung** – bei bewilligter staatlicher Kostenübernahme entfallen die Lehrgangsgebühren für Dich
 
 ## Gefragte Bereiche für Quereinsteiger:innen 40+
 
@@ -517,20 +517,20 @@ KI-Anwendungsspezialist:innen müssen nicht programmieren können. Der Fokus lie
 
 1. Informiere Dich über passende Weiterbildungen
 2. Lass Dich bei der Agentur für Arbeit beraten
-3. Beantrage den Bildungsgutschein (wir helfen Dir bei der Vorbereitung)
+3. Beantrage die Zusage bei der Agentur (wir helfen Dir bei der Vorbereitung)
 4. Starte Deine Weiterbildung – in 3–6 Monaten bist Du bereit
 
 ## Häufige Bedenken – und warum sie unbegründet sind
 
 - **„Ich bin zu alt"** – Falsch. Unternehmen suchen Leute mit Erfahrung und Zuverlässigkeit.
-- **„Ich kann mir das nicht leisten"** – Mit dem Bildungsgutschein können bis zu 100 % der Kosten übernommen werden.
+- **„Ich kann mir das nicht leisten"** – bei bewilligter staatlicher Übernahme können bis zu 100 % der Maßnahmenkosten anfallen.
 - **„Technologie überfordert mich"** – Unsere Kurse starten bei null und sind für Quereinsteiger:innen konzipiert.`,
   },
   {
     slug: "quereinsteiger-projektmanagement",
-    title: "Quereinsteiger Projektmanagement – Chancen und Wege",
+    title: "Vom Organisationstalent zur PM-Rolle – ohne klassischen Wirtschafts-Master",
     description:
-      "Projektmanagement als Quereinsteiger:in? Erfahre, welche Wege es gibt und wie Du ohne Vorerfahrung einsteigst.",
+      "Welche Methoden zuerst Sinn ergeben, welche Zertifikate im Gespräch zählen und wie Du Praxisbeispiele aus dem Kurs in Bewerbungen übersetzt.",
     category: "karriere",
     content: `## Projektmanagement: Der perfekte Quereinstieg
 
@@ -570,13 +570,13 @@ Projektmanagement ist einer der besten Bereiche für Quereinsteiger:innen. Warum
 
 ## Förderung
 
-Die Weiterbildung ist mit dem Bildungsgutschein bis zu 100 % förderbar. Wir beraten Dich kostenlos.`,
+AZAV-Maßnahmen können mit staatlicher Kostenübernahme kombiniert werden, sofern die Agentur im Einzelfall bewilligt. Wir beraten Dich kostenlos.`,
   },
   {
     slug: "quereinsteiger-sales",
-    title: "Quereinsteiger im Vertrieb – So gelingt der Einstieg",
+    title: "Tech-naher Vertrieb: warum Persönlichkeit vor Studiengang kommt",
     description:
-      "Sales als Quereinsteiger:in? Warum der IT-Vertrieb einer der besten Einstiege ist und wie Du ohne Erfahrung startest.",
+      "SDR- und AE-Pfade, typische Provisionsmodelle und welche Übungen im Live-Kurs später im Kundentermin helfen.",
     category: "karriere",
     content: `## Vertrieb als Quereinstieg: Warum gerade Sales?
 
@@ -617,19 +617,19 @@ Du führst ein Team und verantwortest Umsatzziele.
 
 ## Förderung
 
-Die Sales-Weiterbildung ist mit dem Bildungsgutschein bis zu 100 % förderbar. Kontaktiere uns für eine kostenlose Beratung.`,
+Unsere Sales-Maßnahme ist AZAV-zertifiziert; staatliche Kostenübernahme ist im Einzelfall möglich. Kontaktiere uns für eine kostenlose Beratung.`,
   },
   {
     slug: "berufe-mit-zukunft",
-    title: "Berufe mit Zukunft – Die gefragtesten Jobs",
+    title: "Drei Wachstumsfelder, die wir im Campus täglich einstückeln",
     description:
-      "Welche Berufe haben Zukunft? Die gefragtesten Karrierewege in KI, IT-Sales und Projektmanagement im Überblick.",
+      "KI-Anwendung, tech-naher Vertrieb, agiles Arbeiten: welche Profile konkret entstehen und wie schnell Du mit strukturierter Qualifizierung startklar wirst.",
     category: "karriere",
-    content: `## Berufe mit Zukunft: Diese Jobs sind gefragt
+    content: `## Drei Felder, die wir im Campus täglich schärfen
 
-Der Arbeitsmarkt verändert sich rasant. Digitalisierung, KI und neue Arbeitsmodelle schaffen Berufe, die es vor wenigen Jahren noch nicht gab. Wer sich jetzt positioniert, hat die besten Chancen.
+Wir konzentrieren uns auf KI-Anwendung, tech-nahen Vertrieb und agiles Arbeiten – drei Bereiche mit hoher Nachfrage und klaren Nachweisen über AZAV-Maßnahmen.
 
-## Die drei gefragtesten Bereiche
+## Die drei Schwerpunkte im Überblick
 
 ### 1. Künstliche Intelligenz
 KI durchdringt alle Branchen. Gefragt sind nicht nur Entwickler:innen, sondern vor allem Anwendungsspezialist:innen, Prompt Engineers und KI-Projektmanager:innen.
@@ -652,27 +652,27 @@ Agiles Arbeiten ist Standard. Scrum Master, Product Owner und Projektmanager:inn
 - **Perspektive:** Branchenübergreifend nachgefragt
 - **Besonderheit:** Soft Skills und Methodenkompetenz stehen im Vordergrund
 
-## Was diese Berufe gemeinsam haben
+## Was diese Profile gemeinsam haben
 
 - Hohe Nachfrage auf dem Arbeitsmarkt
 - Gute Gehälter bereits beim Einstieg
-- Kein Fachstudium erforderlich
-- Einstieg über eine Weiterbildung in 3–6 Monaten möglich
-- Bis zu 100 % förderbar mit Bildungsgutschein
+- Kein Fachstudium zwingend erforderlich
+- Strukturierter Einstieg über 3–6 Monate Live-Unterricht
+- Staatliche Kostenübernahme möglich, sofern die Agentur bewilligt
 
 ## Dein nächster Schritt
 
-Informiere Dich über unsere AZAV-zertifizierten Weiterbildungen und lass Dich kostenlos beraten. Wir helfen Dir, den richtigen Karriereweg zu finden.`,
+Informiere Dich über unsere drei AZAV-Programme und lass Dich kostenlos beraten – wir matchen Kurs, Nachweise und Zeitplan.`,
   },
   {
     slug: "gehaltsvergleich-vor-nach-weiterbildung",
-    title: "Gehalt vor und nach der Weiterbildung – Lohnt es sich?",
+    title: "Sprünge nach Qualifizierung: realistische Spannen statt Marketingzahlen",
     description:
-      "Was verdienst Du nach einer Weiterbildung? Konkrete Gehaltsvergleiche in KI, Sales und Projektmanagement.",
+      "Bandbreiten für KI-, Vertriebs- und PM-Rollen, welche Hebel wirklich zählen und woran Du faire Angebote erkennst.",
     category: "karriere",
-    content: `## Lohnt sich eine Weiterbildung finanziell?
+    content: `## Lohnt sich gezielte Qualifizierung finanziell?
 
-Kurze Antwort: Ja. Eine gezielte Weiterbildung kann Dein Gehalt um 30–100 % steigern – besonders beim Branchenwechsel.
+Kurze Antwort: oft ja. Ein klarer Kompetenzsprung kann Dein Gehalt spürbar heben – besonders beim Branchenwechsel.
 
 ## Gehaltsvergleich: Vorher vs. Nachher
 
@@ -681,7 +681,7 @@ Kurze Antwort: Ja. Eine gezielte Weiterbildung kann Dein Gehalt um 30–100 % st
 | Situation | Gehalt (brutto/Jahr) |
 |-----------|---------------------|
 | Ohne KI-Kompetenz | 25.000–35.000 € |
-| Nach KI-Weiterbildung (Einstieg) | 45.000–55.000 € |
+| Nach KI-Qualifizierung (Einstieg) | 45.000–55.000 € |
 | Mit 2–3 Jahren KI-Erfahrung | 60.000–80.000 € |
 
 ### IT-Sales
@@ -689,7 +689,7 @@ Kurze Antwort: Ja. Eine gezielte Weiterbildung kann Dein Gehalt um 30–100 % st
 | Situation | Gehalt (brutto/Jahr) |
 |-----------|---------------------|
 | Ohne Sales-Erfahrung | 25.000–35.000 € |
-| Nach Sales-Weiterbildung (SDR) | 40.000–55.000 € (+ Provision) |
+| Nach Sales-Qualifizierung (SDR) | 40.000–55.000 € (+ Provision) |
 | Account Executive (2–3 Jahre) | 65.000–100.000 € (inkl. Provision) |
 
 ### Projektmanagement
@@ -697,7 +697,7 @@ Kurze Antwort: Ja. Eine gezielte Weiterbildung kann Dein Gehalt um 30–100 % st
 | Situation | Gehalt (brutto/Jahr) |
 |-----------|---------------------|
 | Ohne PM-Qualifikation | 28.000–38.000 € |
-| Nach PM-Weiterbildung (Einstieg) | 42.000–52.000 € |
+| Nach PM-Qualifizierung (Einstieg) | 42.000–52.000 € |
 | Senior PM / Scrum Master (3+ Jahre) | 60.000–80.000 € |
 
 ## Was beeinflusst den Gehaltssprung?
@@ -709,24 +709,24 @@ Kurze Antwort: Ja. Eine gezielte Weiterbildung kann Dein Gehalt um 30–100 % st
 
 ## Die Rechnung: Investition vs. Ertrag
 
-- **Kosten der Weiterbildung:** 0 € (mit Bildungsgutschein)
+- **Lehrgangsgebühren:** 0 € aus eigener Tasche, sofern staatliche Kostenübernahme bewilligt wird
 - **Dauer:** 3–6 Monate
-- **Gehaltsplus:** Durchschnittlich 15.000–30.000 € pro Jahr
-- **Amortisation:** Sofort, da Du nichts investiert hast
+- **Gehaltsplus:** häufig im mittleren fünfstelligen Bereich pro Jahr – abhängig von Rolle und Region
+- **Risiko:** gering, wenn keine Eigenbeteiligung anfällt
 
 ## Fazit
 
-Eine Weiterbildung mit Bildungsgutschein ist eine der sichersten Investitionen in Deine Karriere: kein finanzielles Risiko, hoher potenzieller Ertrag.`,
+Qualifizierung plus Nachweise ist oft der schnellste Hebel – besonders, wenn Du parallel Beratung und Bewerbung im Blick behältst.`,
   },
   {
     slug: "online-weiterbildung-vorteile",
-    title: "Online-Weiterbildung: Vorteile und Tipps",
+    title: "Live online lernen: warum wir auf feste Sessions statt reiner Videos setzen",
     description:
-      "Online lernen oder vor Ort? Die Vorteile einer Online-Weiterbildung und Tipps, wie Du das Beste daraus machst.",
+      "Virtuelles Klassenzimmer, Fokus im Alltag, technische Voraussetzungen – und woran Du seriöse Angebote erkennst.",
     category: "weiterbildung",
-    content: `## Warum Online-Weiterbildung?
+    content: `## Warum Live online?
 
-Online-Weiterbildung ist längst kein Kompromiss mehr – sie bietet echte Vorteile gegenüber dem Präsenzunterricht. Gerade für Berufswechsler:innen und Menschen in Umbruchsituationen ist Flexibilität entscheidend.
+Live-Sessions sind kein Kompromiss, wenn Gruppen klein bleiben und Dozent:innen direkt reagieren. Für Berufswechsler:innen zählt vor allem planbare Zeitfenster ohne Pendelstress.
 
 ## Die Vorteile im Überblick
 
@@ -743,11 +743,11 @@ Online-Weiterbildung ist längst kein Kompromiss mehr – sie bietet echte Vorte
 ### Kosteneffizienz
 - Kein Umzug nötig
 - Keine Unterbringungskosten
-- Mit Bildungsgutschein komplett kostenlos
+- Bei bewilligter staatlicher Übernahme entfallen die Lehrgangsgebühren für Dich
 
 ### Technik
 - Modernes virtuelles Klassenzimmer
-- Bei Forward Education: MacBook inklusive
+- Bei Itera Campus: MacBook inklusive
 - Professionelle Tools und Plattformen
 
 ## Tipps für erfolgreiches Online-Lernen
@@ -765,19 +765,19 @@ Online-Weiterbildung ist längst kein Kompromiss mehr – sie bietet echte Vorte
 - Menschen, die während der Weiterbildung zu Hause bleiben möchten
 - Alle, die eine moderne Lernumgebung bevorzugen
 
-## Online lernen bei Forward Education
+## Online lernen bei Itera Campus
 
-Unsere Kurse in KI, Sales und Projektmanagement finden komplett online statt – im Live-Unterricht mit persönlicher Betreuung. Bis zu 100 % förderbar mit Bildungsgutschein.`,
+Unsere Kurse in KI, Sales und Projektmanagement finden komplett online statt – im Live-Unterricht mit persönlicher Betreuung. Staatliche Kostenübernahme ist möglich, sofern die Agentur im Einzelfall bewilligt.`,
   },
   {
     slug: "weiterbildung-lebenslauf",
-    title: "Weiterbildung im Lebenslauf – So präsentierst Du sie richtig",
+    title: "Qualifizierung im CV: Platzierung, Formulierungen, Zertifikate sauber setzen",
     description:
-      "Wie stellst Du eine Weiterbildung im Lebenslauf dar? Tipps für eine überzeugende Bewerbung nach der Weiterbildung.",
+      "Wie Du AZAV-Maßnahmen, Zeiträume und Skills so schreibst, dass Personaler sofort den Mehrwert erkennen.",
     category: "weiterbildung",
-    content: `## Weiterbildung im Lebenslauf: Der richtige Platz
+    content: `## Qualifizierung im Lebenslauf: Der richtige Platz
 
-Eine abgeschlossene Weiterbildung gehört prominent in Deinen Lebenslauf. Sie zeigt Engagement, Lernbereitschaft und aktuelle Qualifikation.
+Eine abgeschlossene AZAV-Maßnahme gehört prominent in Deinen Lebenslauf. Sie zeigt Engagement, Lernbereitschaft und aktuelle Qualifikation.
 
 ## Wo im Lebenslauf?
 
@@ -790,11 +790,11 @@ Wenn Du noch wenig Berufserfahrung hast, kann die Weiterbildung als letzter Bild
 ## So formulierst Du es
 
 **Gut:**
-- Weiterbildung Projektmanagement (AZAV-zertifiziert), Forward Education, 01/2026–06/2026
+- Weiterbildung Projektmanagement (AZAV-zertifiziert), Itera Campus, 01/2026–06/2026
 - Schwerpunkte: Agile Methoden (Scrum, Kanban), Stakeholder-Management, Praxisprojekte
 
 **Schlecht:**
-- Kurs gemacht bei Forward Education
+- Kurs gemacht bei Itera Campus
 
 ## Was gehört dazu?
 
@@ -816,13 +816,13 @@ Eine Weiterbildung schließt Lücken im Lebenslauf. Statt einer unerklärten Pau
 
 ## Tipp
 
-Bei Forward Education bekommst Du nicht nur die Weiterbildung, sondern auch Bewerbungscoaching und Karriereberatung – damit Dein Lebenslauf und Deine Bewerbung überzeugen.`,
+Bei Itera Campus bekommst Du nicht nur die Weiterbildung, sondern auch Bewerbungscoaching und Karriereberatung – damit Dein Lebenslauf und Deine Bewerbung überzeugen.`,
   },
   {
     slug: "ki-tools-im-beruf",
-    title: "KI-Tools im Beruf – Diese solltest Du kennen",
+    title: "Tool-Landkarte für Teams: Text, Daten, Automatisierung im Alltag",
     description:
-      "Die wichtigsten KI-Tools für den Berufsalltag: Von ChatGPT über Midjourney bis hin zu Automatisierungstools.",
+      "Auswahlhilfe statt Tool-Hype: wofür sich welche Klasse von Assistenz eignet und worauf Arbeitgeber bei sicherem Einsatz achten.",
     category: "weiterbildung",
     content: `## KI-Tools, die Deinen Berufsalltag verändern
 
@@ -865,13 +865,13 @@ Unternehmen suchen Mitarbeiter:innen, die:
 
 ## KI-Kompetenz aufbauen
 
-In unserer KI-Weiterbildung lernst Du den professionellen Umgang mit KI-Tools, Prompt Engineering und die strategische Nutzung von KI im Unternehmen. AZAV-zertifiziert und bis zu 100 % förderbar.`,
+Im KI-Programm des Itera Campus trainieren wir professionellen Umgang mit Tools, Prompt-Arbeit und den strategischen Einsatz im Team. AZAV-zertifiziert; staatliche Kostenübernahme im Einzelfall möglich.`,
   },
   {
     slug: "prompt-engineering-lernen",
-    title: "Prompt Engineering lernen – Grundlagen und Praxis",
+    title: "Prompts schreiben, die liefern: Struktur, Kontext, Iteration",
     description:
-      "Was ist Prompt Engineering? Lerne die Grundlagen und wie Du KI-Modelle mit den richtigen Prompts steuerst.",
+      "Vom ersten Entwurf bis sauberem Output: Muster, die wir im Unterricht üben, und typische Fehler, die Modelle ausbremsen.",
     category: "weiterbildung",
     content: `## Was ist Prompt Engineering?
 
@@ -915,15 +915,15 @@ Zeige der KI ein Beispiel für das gewünschte Ergebnis, bevor Du die eigentlich
 | Branchen | Tech, Beratung, Marketing, Medien |
 | Voraussetzung | KI-Verständnis, analytisches Denken |
 
-## Prompt Engineering lernen bei Forward Education
+## Prompt-Arbeit im KI-Programm des Campus
 
-In unserer KI-Weiterbildung ist Prompt Engineering ein zentrales Modul. Du lernst von den Grundlagen bis zu fortgeschrittenen Techniken – mit Praxis an echten Use Cases.`,
+Prompts sind ein festes Modul: vom ersten Entwurf bis zu sauberen Outputs – immer mit echten Use Cases aus dem Unterricht.`,
   },
   {
     slug: "agiles-arbeiten-kanban-scrum",
-    title: "Agiles Arbeiten: Kanban vs. Scrum im Vergleich",
+    title: "Fluss oder Sprint? Wann Kanban, wann Scrum im Team Sinn macht",
     description:
-      "Kanban oder Scrum – was ist besser? Ein Vergleich der beiden beliebtesten agilen Methoden für Einsteiger.",
+      "Entscheidungshilfe für Praxisteams: Rhythmus, Rollen, Änderungsfrequenz – plus Hybrid-Ideen aus realen Projekten.",
     category: "weiterbildung",
     content: `## Scrum vs. Kanban: Zwei Wege zum agilen Arbeiten
 
@@ -970,23 +970,23 @@ Viele Teams kombinieren Scrum und Kanban – „Scrumban". Zum Beispiel:
 - Sprint-Zyklen von Scrum mit WIP-Limits von Kanban
 - Kanban-Board mit regelmäßigen Retrospektiven
 
-## Agile Methoden lernen
+## Agile Methoden im PM-Programm
 
-In unserer Projektmanagement-Weiterbildung lernst Du beide Methoden in der Praxis – inklusive Zertifizierungsvorbereitung für Scrum Master. AZAV-zertifiziert und bis zu 100 % förderbar.`,
+Wir üben Scrum und Kanban hands-on – inklusive Vorbereitung auf gängige Zertifizierungen. AZAV-zertifiziert; staatliche Kostenübernahme im Einzelfall möglich.`,
   },
   {
     slug: "foerderung-weiterbildung-uebersicht",
-    title: "Förderung Weiterbildung – So funktioniert der Bildungsgutschein",
+    title: "Staatliche Qualifizierung: Leistungsarten, AZAV-Pflicht, typischer Ablauf",
     description:
-      "Alles zur Förderung Deiner Weiterbildung über den Bildungsgutschein der Agentur für Arbeit: Voraussetzungen, Leistungen und Ablauf.",
+      "Einordnung ohne Behördendeutsch: welche Posten oft übernommen werden, was die Agentur prüft und wie Du Unterlagen bündelst.",
     category: "foerderung",
-    content: `## Weiterbildung gefördert: Der Bildungsgutschein
+    content: `## Staatliche Qualifizierung: was üblich ist
 
-Der Bildungsgutschein der Agentur für Arbeit ist die zentrale Förderung für berufliche Weiterbildung in Deutschland. Damit können bis zu 100 % der Weiterbildungskosten übernommen werden.
+Die Agentur für Arbeit kann unter definierten Voraussetzungen Kosten einer beruflichen Maßnahme übernehmen – oft bis zu 100 % der Lehrgangsgebühren, sofern AZAV und Einzelfall passen.
 
-## Was kann der Bildungsgutschein abdecken?
+## Welche Kostenposten können dabei sein?
 
-Laut Agentur für Arbeit können mit dem Bildungsgutschein folgende Kosten übernommen werden:
+Laut öffentlicher Darstellung der Agentur können u. a. folgende Positionen infrage kommen:
 - **Lehrgangsgebühren** inkl. Lernmittel und Prüfungsgebühren
 - **Fahrtkosten** zur Bildungsstätte
 - **Kinderbetreuungskosten** während der Weiterbildung
@@ -996,19 +996,19 @@ Welche Kosten in Deinem Fall übernommen werden, klärst Du im persönlichen Ber
 
 ## Voraussetzungen
 
-Du kannst einen Bildungsgutschein erhalten, wenn:
+Eine Zusage ist möglich, wenn u. a.:
 - Du arbeitslos, arbeitssuchend oder von Arbeitslosigkeit bedroht bist
 - Die Weiterbildung notwendig ist, um Deine Arbeitsmarktchancen zu verbessern
 - Der Bildungsträger und die Maßnahme AZAV-zertifiziert sind
 - Du ein persönliches Beratungsgespräch bei der Agentur für Arbeit geführt hast
 
-## So beantragst Du den Bildungsgutschein
+## Typischer Ablauf bis zum Kursstart
 
 1. **Termin vereinbaren** – Kontaktiere Deine Agentur für Arbeit
-2. **Beratungsgespräch** – Besprich Deinen Weiterbildungswunsch
-3. **Gutschein erhalten** – Bei positiver Entscheidung bekommst Du den Bildungsgutschein
-4. **Kurs wählen** – Wähle einen AZAV-zertifizierten Anbieter
-5. **Weiterbildung starten** – Die Kosten werden direkt an den Bildungsträger gezahlt
+2. **Beratungsgespräch** – Besprich Deinen Qualifizierungswunsch
+3. **Zusage erhalten** – bei positiver Entscheidung bekommst Du die gebündelten Leistungen
+4. **Kurs wählen** – wähle einen AZAV-zertifizierten Anbieter
+5. **Maßnahme starten** – Abrechnung in der Regel direkt zwischen Agentur und Träger
 
 ## Nächster Schritt
 
@@ -1019,9 +1019,9 @@ Kontaktiere uns für eine kostenlose Beratung. Wir helfen Dir bei der Vorbereitu
 
   {
     slug: "was-ist-mein-now",
-    title: "Was ist mein NOW? – Das Portal für berufliche Weiterbildung",
+    title: "mein NOW nutzen: Orientierung, Tests, Kursfinder – ohne Portal-Stress",
     description:
-      "mein NOW ist das nationale Onlineportal der Bundesagentur für Arbeit für Weiterbildung. Erfahre, was es bietet und wie Du es nutzt.",
+      "Was die fünf Bereiche leisten, wie Du sie mit einer konkreten Maßnahmenberatung kombinierst und wann ein Anbieter wie Itera Campus sinnvoll nachschaltet.",
     category: "weiterbildung",
     content: `## Was ist mein NOW?
 
@@ -1041,7 +1041,7 @@ Du findest dort einen niedrigschwelligen Einstieg: Kein Vorwissen nötig, alles 
 Übersicht von Beratungsstellen zu Weiterbildung, Umschulung und Teilqualifizierung – in Deiner Nähe oder online.
 
 ### 2. Förderungen
-Navigator für finanzielle Unterstützung: Bildungsgutschein, Bildungsurlaub, Aufstiegs-BAFöG und weitere Fördermöglichkeiten. Du siehst schnell, was auf Dich zutreffen könnte.
+Navigator für finanzielle Unterstützung: u. a. Zusage der Agentur, Bildungsurlaub, Aufstiegs-BAFöG und weitere Programme. Du siehst schnell, was auf Dich zutreffen könnte.
 
 ### 3. Weiterbildungen
 Große Datenbank mit bundesweiten Weiterbildungsangeboten – Voll- oder Teilzeit, vor Ort oder online. Du kannst nach Thema, Ort und Format filtern.
@@ -1052,15 +1052,15 @@ Tests zur Orientierung: Welche Weiterbildung passt zu Dir? Wie stehen Deine digi
 ### 5. Perspektiven
 Informationen zu Berufen, Branchen, Verdienst und Weiterbildungsmöglichkeiten. So siehst Du, wohin eine Qualifizierung führen kann.
 
-## mein NOW und Forward Education
+## mein NOW und Itera Campus
 
-Unsere Kurse in Künstlicher Intelligenz, Sales und Projektmanagement sind AZAV-zertifiziert und mit dem Bildungsgutschein förderbar – genau die Art von Angeboten, die Du auch über mein NOW findest. Wenn Du über mein NOW auf uns kommst oder Dich parallel dort informierst: Wir beraten Dich kostenlos zu Deinem passenden Kurs und zu Fördermöglichkeiten.`,
+Unsere Programme in KI, tech-nahem Vertrieb und Projektmanagement sind AZAV-zertifiziert – sie passen in dieselbe Kategorie von Angeboten, die Du auch über mein NOW filterst. Parallel zur Portalsuche klären wir mit Dir Kursfit, Unterlagen und Zeitplan – unverbindlich.`,
   },
   {
     slug: "weiterbildung-finden-mein-now",
-    title: "Weiterbildung finden mit mein NOW – So nutzt Du das Portal",
+    title: "Vom Filter zur festen Maßnahme: sinnvolle Reihenfolge im NOW-Portal",
     description:
-      "Schritt für Schritt: So findest Du mit mein NOW die passende Weiterbildung, prüfst Förderungen und startest Deine Qualifizierung.",
+      "Tests, Förder-Navigator, Kurssuche und Beratung: wie Du Ergebnisse dokumentierst, bevor Du mit einem AZAV-Anbieter ins Detail gehst.",
     category: "weiterbildung",
     content: `## Weiterbildung finden mit mein NOW: So gehst Du vor
 
@@ -1076,55 +1076,55 @@ Das hilft Dir, klarer zu formulieren, was Du suchst.
 
 ## Schritt 2: Förderung prüfen
 
-Unter **Förderungen** findest Du den Überblick: Bildungsgutschein, Bildungsurlaub, Aufstiegs-BAFöG und mehr. Du siehst, welche Unterstützung für Dich infrage kommt. Der Bildungsgutschein der Agentur für Arbeit ist die häufigste Förderung für Arbeitssuchende und von Arbeitslosigkeit Bedrohte – bis zu 100 % der Kosten einer AZAV-zertifizierten Weiterbildung.
+Unter **Förderungen** findest Du den Überblick: u. a. Zusage der Agentur (häufig als Bildungsgutschein bezeichnet), Bildungsurlaub, Aufstiegs-BAFöG und mehr. Für Arbeitssuchende und von Arbeitslosigkeit Bedrohte ist die staatliche Kostenübernahme einer AZAV-Maßnahme oft der relevante Hebel – bis zu 100 % der Lehrgangsgebühren sind im Einzelfall möglich.
 
 ## Schritt 3: Kurse suchen
 
-Unter **Weiterbildungen** suchst Du nach Thema, Ort, Voll- oder Teilzeit und ob online oder vor Ort. Die Suche zeigt Dir zugelassene Anbieter und Kurse. Wichtig: Nur **AZAV-zertifizierte** Angebote sind mit dem Bildungsgutschein förderbar. Das steht bei den Kursen in der Regel dabei.
+Unter **Weiterbildungen** suchst Du nach Thema, Ort, Voll- oder Teilzeit und ob online oder vor Ort. Die Suche zeigt Dir zugelassene Anbieter und Kurse. Wichtig: Nur **AZAV-zertifizierte** Angebote lassen sich in der Regel mit einer Zusage der Agentur kombinieren. Das steht bei den Kursen in der Regel dabei.
 
 ## Schritt 4: Beratung nutzen
 
-Wenn Du unsicher bist oder Förderung beantragen willst, führt an der **Beratung** kein Weg vorbei. Das Portal verweist auf Beratungsstellen in Deiner Nähe – oft Agentur für Arbeit oder Jobcenter. Dort besprichst Du Deinen Wunsch und beantragst bei Bedarf den Bildungsgutschein.
+Wenn Du unsicher bist oder Förderung beantragen willst, führt an der **Beratung** kein Weg vorbei. Das Portal verweist auf Beratungsstellen in Deiner Nähe – oft Agentur für Arbeit oder Jobcenter. Dort besprichst Du Deinen Wunsch und beantragst bei Bedarf die Zusage.
 
 ## Tipp für die Praxis
 
-Nutze mein NOW als Einstieg, und hole Dir danach eine **konkrete Beratung** bei einem Bildungsträger. Wir bei Forward Education beraten Dich kostenlos: Welcher Kurs passt zu Dir, welche Förderung kommt infrage und wie Du das Gespräch mit der Agentur für Arbeit vorbereitest.`,
+Nutze mein NOW als Einstieg, und hole Dir danach eine **konkrete Beratung** bei einem Bildungsträger. Wir bei Itera Campus beraten Dich kostenlos: Welcher Kurs passt zu Dir, welche Förderung kommt infrage und wie Du das Gespräch mit der Agentur für Arbeit vorbereitest.`,
   },
   {
     slug: "mein-now-bildungsgutschein-foerderung",
-    title: "mein NOW und Bildungsgutschein – Förderung finden und nutzen",
+    title: "NOW-Navigator + Zusage der Agentur: wie beide Welten zusammenpassen",
     description:
-      "So findest Du mit mein NOW die richtige Förderung für Deine Weiterbildung und was Du beim Bildungsgutschein beachten solltest.",
+      "Was das Portal leistet, was nur im persönlichen Gespräch geklärt wird und welche Unterlagen Du parallel bei einem Träger vorbereitest.",
     category: "foerderung",
-    content: `## mein NOW und Bildungsgutschein: So hängt es zusammen
+    content: `## mein NOW und Zusage der Agentur: So hängt es zusammen
 
-mein NOW ist das nationale Portal der Bundesagentur für Arbeit für berufliche Weiterbildung. Dort findest Du nicht nur Kurse, sondern auch einen **Förder-Navigator**: Du siehst, welche finanziellen Hilfen es gibt – unter anderem den Bildungsgutschein.
+mein NOW ist das nationale Portal der Bundesagentur für Arbeit für berufliche Weiterbildung. Dort findest Du nicht nur Kurse, sondern auch einen **Förder-Navigator**: Du siehst, welche finanziellen Hilfen es gibt – darunter die bekannte Zusage der Agentur (oft „Bildungsgutschein“ genannt).
 
 ## Förderungen auf mein NOW finden
 
 Im Bereich **Förderungen** siehst Du auf einen Blick:
-- **Bildungsgutschein** – Kostenübernahme durch die Agentur für Arbeit für AZAV-zertifizierte Weiterbildungen (bis zu 100 %)
+- **Zusage der Agentur** – Kostenübernahme für AZAV-zertifizierte Maßnahmen (bis zu 100 % im Einzelfall)
 - **Bildungsurlaub** – bezahlte Freistellung für Weiterbildung (landesrechtlich geregelt)
 - **Aufstiegs-BAFöG** – Förderung für Fortbildungen z. B. zum/zur Meister:in oder Fachwirt:in
 - Weitere Programme je nach Bundesland und Zielgruppe
 
 Du filterst nach Deiner Situation (z. B. arbeitslos, beschäftigt) und bekommst Hinweise, was für Dich infrage kommt.
 
-## Bildungsgutschein: Das Wichtigste
+## Zusage der Agentur: Das Wichtigste
 
-Der Bildungsgutschein ist die zentrale Förderung für viele unserer Teilnehmer:innen. Wichtig zu wissen:
+Für viele unserer Teilnehmer:innen ist diese staatliche Kostenübernahme der zentrale Hebel. Wichtig zu wissen:
 - **Kein Rechtsanspruch** – die Agentur für Arbeit entscheidet nach Beratung
-- **Beratungsgespräch nötig** – nur danach wird ein Gutschein ausgestellt
+- **Beratungsgespräch nötig** – nur danach wird die Zusage ausgestellt
 - **Nur AZAV-zertifizierte Kurse** – der Anbieter und die Maßnahme müssen zertifiziert sein
 - **Kosten** – Lehrgangsgebühren, Fahrt, Kinderbetreuung und ggf. Unterkunft können übernommen werden
 
-mein NOW hilft Dir, diese Förderung zu finden. Den Antrag stellst Du dann im Gespräch mit Deiner Agentur für Arbeit oder Deinem Jobcenter.
+mein NOW hilft Dir, passende Programme zu finden. Den Antrag stellst Du dann im Gespräch mit Deiner Agentur für Arbeit oder Deinem Jobcenter.
 
 ## Nach der Förder-Suche: Konkret werden
 
-Wenn Du über mein NOW siehst, dass der Bildungsgutschein für Dich infrage kommt, solltest Du:
+Wenn Du über mein NOW siehst, dass eine Zusage für Dich infrage kommt, solltest Du:
 1. **Beratung buchen** – über mein NOW oder direkt bei der Agentur für Arbeit
-2. **Konkretes Kursangebot besorgen** – z. B. von einem AZAV-zertifizierten Anbieter wie Forward Education
+2. **Konkretes Kursangebot besorgen** – z. B. von einem AZAV-zertifizierten Anbieter wie Itera Campus
 3. **Unterlagen für die Agentur vorbereiten** – wir stellen Dir alle nötigen Nachweise und Infos für das Beratungsgespräch bereit
 
 So verbindest Du das Portal mit dem nächsten Schritt: Beratung und Antrag.`,

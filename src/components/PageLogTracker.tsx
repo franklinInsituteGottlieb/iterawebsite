@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { siteConfig } from "@/config/site.config";
 
 const SESSION_ID_KEY = "page_log_session_id";
 const STORAGE_KEY = "course_context";
@@ -9,12 +10,17 @@ const ENTERED_VIA_UTM_KEY = "page_log_entered_via_utm";
 const SENT_PREFIX_KEY = "page_log_sent_for_";
 const MEINNOW_COURSE_PARAMS_KEY = "meinnow_course_params";
 
-/** Page-Log senden nur, wenn UTM "meinnow" enthält (z.B. meinnow-course). */
+/** Session-Tracking starten, wenn UTM meinnow oder Site-Kampagne (itera-campus / website / Legacy forward-education). */
 function hasUtmInUrl(): boolean {
   if (typeof window === "undefined") return false;
   const utm = new URLSearchParams(window.location.search).get("utm_source") ?? "";
   const v = utm.toLowerCase();
-  return v.includes("meinnow");
+  return (
+    v.includes("meinnow") ||
+    v === "itera-campus" ||
+    v === "forward-education" ||
+    v === "website"
+  );
 }
 
 /** Referrer ist unsere eigene Seite (Navigation von innen). */
@@ -30,8 +36,8 @@ function isReferrerOurSite(): boolean {
 }
 
 /**
- * Tracking nur, wenn der Nutzer von außen mit UTM (forward-education/website) gekommen ist.
- * – Referrer = unsere Seite → nie Flag setzen; wenn Flag schon gesetzt ist, Session weiter tracken.
+ * Tracking nur, wenn der Nutzer von außen mit passendem UTM gekommen ist (meinnow, itera-campus, website, Legacy forward-education).
+ * – Referrer = unsere Seite → kein neues Flag; wenn Flag schon gesetzt ist, Session weiter tracken.
  * – Referrer = extern/leer + UTM in URL → Flag setzen, ab dann ganze Session in page_log.
  */
 function shouldTrackPageLog(): boolean {
@@ -140,14 +146,14 @@ export default function PageLogTracker() {
       // Redundant safety: durch Polling darf niemals mehrfach gesendet werden.
       if (sessionStorage.getItem(sentKey) === "1") return;
 
-      const storedForward = getCourseContext();
+      const storedFromSite = getCourseContext();
       const storedMeinnow = getMeinnowCourseContext();
-      const course_id = url_course_id || storedForward.course_id || storedMeinnow.course_id;
+      const course_id = url_course_id || storedFromSite.course_id || storedMeinnow.course_id;
 
       if (!course_id) return;
 
-      const meinnow_course_type = storedForward.course_type || storedMeinnow.course_type;
-      const meinnow_course_duration = storedForward.course_duration || storedMeinnow.course_duration;
+      const meinnow_course_type = storedFromSite.course_type || storedMeinnow.course_type;
+      const meinnow_course_duration = storedFromSite.course_duration || storedMeinnow.course_duration;
 
       // Daten sollen erst gesendet werden, wenn Kurs-Typ und Duration verfügbar sind.
       if (!meinnow_course_type || !meinnow_course_duration) return;
@@ -160,7 +166,7 @@ export default function PageLogTracker() {
 
       const payload = {
         action: "track",
-        brand: "forward",
+        brand: siteConfig.tracking?.brand ?? "itera-campus",
         ts: new Date().toISOString(),
         session_id,
         course_id,

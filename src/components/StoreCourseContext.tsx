@@ -13,7 +13,7 @@ function hasUtmInUrl(): boolean {
   if (typeof window === "undefined") return false;
   const utm = new URLSearchParams(window.location.search).get("utm_source") ?? "";
   const v = utm.toLowerCase();
-  return v === "forward-education" || v === "website";
+  return v === "itera-campus" || v === "forward-education" || v === "website";
 }
 
 function isMeinnowSource(utmSource?: string): boolean {
@@ -27,7 +27,7 @@ interface StoreCourseContextProps {
 }
 
 /**
- * Speichert Kurs-Kontext für Typeform, wenn utm_source=forward-education oder website:
+ * Speichert Kurs-Kontext für Typeform, wenn utm_source=itera-campus, website oder (Legacy) forward-education:
  * – nach Suche (FROM_SITE_FLAG gesetzt) oder
  * – direkter Aufruf der Kurs-URL mit passendem UTM.
  * Setzt ENTERED_VIA_UTM_KEY, damit Typeform die Infos erhält.
@@ -48,7 +48,9 @@ export default function StoreCourseContext({ course, courseId, utmSource }: Stor
       return;
     }
 
-    const allowedSource = utmSource === "forward-education" || utmSource === "website";
+    const src = (utmSource ?? "").toLowerCase();
+    const allowedSource =
+      src === "itera-campus" || src === "forward-education" || src === "website";
     if (!allowedSource) return;
     const fromSearch = sessionStorage.getItem(FROM_SITE_FLAG) === "1";
     const directLinkWithUtm = hasUtmInUrl();

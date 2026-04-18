@@ -52,7 +52,7 @@ export default async function RatgeberArticlePage({ params }: PageProps) {
 
   const base = siteConfig.siteUrl.replace(/\/$/, "");
   const categoryLabel =
-    ratgeberCategories.find((c) => c.slug === article.category)?.label ?? "Ratgeber";
+    ratgeberCategories.find((c) => c.slug === article.category)?.label ?? "Campus-Wissen";
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -72,13 +72,13 @@ export default async function RatgeberArticlePage({ params }: PageProps) {
     <>
       <JsonLd data={articleSchema} />
       <Navbar />
-      <main className="relative min-h-screen pt-28 pb-24">
+      <main className="relative min-h-screen pt-36 pb-24">
         <PageBackground />
-        <div className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 page-shell-readable">
           <Breadcrumbs
             items={[
               { label: "Startseite", href: "/" },
-              { label: "Ratgeber", href: "/ratgeber" },
+              { label: "Campus-Wissen", href: "/ratgeber" },
               { label: article.title },
             ]}
           />
@@ -167,12 +167,12 @@ export default async function RatgeberArticlePage({ params }: PageProps) {
           {/* CTA */}
           <section className="mt-12 text-center rounded-2xl bg-white shadow-lg border border-slate-200 p-8">
             <h2 className="text-xl font-bold text-foreground mb-2">
-              Bereit für Deine Weiterbildung?
+              Nächster Schritt Kursstart?
             </h2>
             <p className="text-foreground-light mb-5 max-w-md mx-auto">
-              Wir klären in einem kurzen Gespräch, welcher Kurs zu Dir passt und helfen Dir beim Bildungsgutschein.
+              Wir klären in einem kurzen Gespräch, welcher Campus-Kurs zu Dir passt und wie Du Unterlagen für die Agentur vorbereitest.
             </p>
-            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
               Kostenloses Beratungsgespräch buchen
             </TypeformLink>
             <p className="mt-3 text-xs text-foreground-light">

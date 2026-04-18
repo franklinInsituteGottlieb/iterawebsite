@@ -5,21 +5,21 @@ import { PARTNER_LOGOS } from "@/config/partners.config";
 
 export default function PartnerSection() {
   return (
-    <section id="partner" className="relative py-24 scroll-mt-28" aria-labelledby="partner-heading">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section id="partner" className="relative py-24 scroll-mt-36" aria-labelledby="partner-heading">
+      <div className="page-shell">
         <div className="text-center mb-12">
           <AnimateOnScroll animation="fadeUp" delay={0} replayWhenInView>
-            <span className="block text-sm font-semibold uppercase tracking-widest text-primary">
+            <span className="block text-base font-semibold uppercase tracking-widest text-primary">
               Kooperationen
             </span>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fadeUp" delay={120} replayWhenInView>
-            <h2 id="partner-heading" className="mt-3 text-3xl sm:text-4xl font-bold text-foreground">
+            <h2 id="partner-heading" className="mt-3 text-4xl sm:text-5xl md:text-6xl font-bold text-foreground">
               Unsere Partner
             </h2>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fadeUp" delay={240} replayWhenInView>
-            <p className="mt-4 mx-auto max-w-2xl text-lg text-foreground-light">
+            <p className="mt-4 mx-auto max-w-3xl text-xl text-foreground-light">
               Wir arbeiten mit starken Partnern zusammen – für Qualität und Reichweite unserer Weiterbildungen.
             </p>
           </AnimateOnScroll>

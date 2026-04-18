@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: "Was ist eine AZAV-Zertifizierung?",
     answer:
-      `AZAV steht für „Akkreditierungs- und Zulassungsverordnung Arbeitsförderung". Sie bestätigt, dass ein Bildungsträger und seine Maßnahmen die Qualitätsstandards der Agentur für Arbeit erfüllen. Forward Education ist AZAV-zertifiziert.`,
+      `AZAV steht für „Akkreditierungs- und Zulassungsverordnung Arbeitsförderung". Sie bestätigt, dass ein Bildungsträger und seine Maßnahmen die Qualitätsstandards der Agentur für Arbeit erfüllen. Die Weiterbildungsangebote unter der Marke Itera Campus sind AZAV-zertifiziert.`,
   },
   {
     question: "Wie lange dauert es, bis der Bildungsgutschein bewilligt wird?",
@@ -57,9 +57,9 @@ export default function KostenPage() {
   return (
     <>
       <Navbar />
-      <main className="relative min-h-screen pt-28 pb-24">
+      <main className="relative min-h-screen pt-36 pb-24">
         <PageBackground />
-        <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 page-shell">
           <JsonLd data={faqSchema} />
 
           <Breadcrumbs
@@ -83,7 +83,7 @@ export default function KostenPage() {
               Lehrgangsgebühren, Fahrtkosten und Kinderbetreuung.
             </p>
             <div className="mt-8">
-              <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+              <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
                 Jetzt kostenlos beraten lassen
               </TypeformLink>
             </div>
@@ -215,7 +215,7 @@ export default function KostenPage() {
             <p className="text-foreground-light mb-6 max-w-lg mx-auto">
               Wir klären gemeinsam, ob Du Anspruch auf den Bildungsgutschein hast und welcher Kurs zu Dir passt.
             </p>
-            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+            <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
               Jetzt kostenlos beraten lassen
             </TypeformLink>
             <p className="mt-3 text-xs text-foreground-light">

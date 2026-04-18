@@ -172,12 +172,12 @@ export default async function CourseDetailPage({ params, searchParams }: PagePro
     <>
       <CourseSchema name={displayTitle} description={course.description} url={courseUrl} />
       <Navbar />
-      <main className="relative min-h-screen pt-20 pb-24">
+      <main className="relative min-h-screen pt-36 pb-24">
         <div className="fixed inset-0 z-0 bg-background" aria-hidden />
         <HeroFixedBackground />
         {/* Hero-Bereich – Titel links, Bild rechts */}
         <section className="relative min-h-[70vh] flex items-center overflow-x-hidden pt-12 pb-24">
-          <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 w-full">
+          <div className="relative z-10 page-shell py-16 w-full">
             <div className="grid lg:grid-cols-2 gap-0 items-stretch lg:min-h-[420px]">
               {/* Links: Titel, Bewertung, Vorteile, CTAs */}
               <div className="course-hero-title-box text-center lg:text-left flex flex-col items-center lg:items-start justify-center lg:pr-6">
@@ -217,7 +217,7 @@ export default async function CourseDetailPage({ params, searchParams }: PagePro
                   ))}
                 </ul>
                 <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+                  <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
                     Platz sichern
                     <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -235,7 +235,7 @@ export default async function CourseDetailPage({ params, searchParams }: PagePro
               <div className="hidden lg:block relative min-h-[320px]">
                 <div className="relative w-full h-full min-h-[380px] rounded-2xl overflow-hidden border border-slate-200 shadow-lg">
                   <Image
-                    src={detail.heroImage ?? "/asian+black.png"}
+                    src={detail.heroImage ?? "/pm.png"}
                     alt={`${displayTitle} – ${siteConfig.seoBrand}`}
                     fill
                     className="object-cover object-center"
@@ -250,9 +250,9 @@ export default async function CourseDetailPage({ params, searchParams }: PagePro
           </div>
         </section>
 
-        <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-4 pb-20">
+        <div className="relative z-10 page-shell pt-4 pb-20">
           {/* Lerninhalte – Abschnitte als Karten */}
-          <section id="inhalt" className="mb-20 scroll-mt-28">
+          <section id="inhalt" className="mb-20 scroll-mt-36">
             <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
               Lerninhalte
             </p>

@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     const payload = {
       action: "track",
       route: "track",
-      brand: body.brand ?? "forward-education",
+      brand: body.brand ?? "itera-campus",
       ts: body.ts ?? new Date().toISOString(),
       session_id: body.session_id ?? "",
       course_id: body.course_id ?? "",

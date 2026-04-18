@@ -5,9 +5,9 @@ import TypeformLink from "@/components/TypeformLink";
 import { siteConfig } from "@/config/site.config";
 
 const COURSE_IMAGES: Record<string, { src: string; alt: string }> = {
-  "kuenstliche-intelligenz": { src: "/blackman.png", alt: "Weiterbildung Künstliche Intelligenz – Forward Education" },
-  "it-sales": { src: "/asian.png", alt: "Weiterbildung Sales und IT-Vertrieb – Forward Education" },
-  "projektmanagement": { src: "/schwarzeFrauMann.png", alt: "Weiterbildung Projektmanagement – Forward Education" },
+  "kuenstliche-intelligenz": { src: "/ai.png", alt: "Weiterbildung Künstliche Intelligenz – Itera Campus" },
+  "it-sales": { src: "/sales.png", alt: "Weiterbildung Sales und IT-Vertrieb – Itera Campus" },
+  "projektmanagement": { src: "/pm.png", alt: "Weiterbildung Projektmanagement – Itera Campus" },
 };
 
 function CourseIcon({ icon }: { icon: string }) {
@@ -43,22 +43,22 @@ function CourseIcon({ icon }: { icon: string }) {
 
 export default function CoursesSection() {
   return (
-    <section id="kurse" className="relative py-24 scroll-mt-28">
-      <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section id="kurse" className="relative py-24 scroll-mt-36">
+      <div className="relative z-10 page-shell">
         {/* Section Header */}
         <div className="text-center mb-12">
           <AnimateOnScroll animation="fadeUp" delay={0} replayWhenInView>
-            <span className="block text-sm font-semibold uppercase tracking-widest text-primary">
+            <span className="block text-base font-semibold uppercase tracking-widest text-primary">
               Unsere Weiterbildungen
             </span>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fadeUp" delay={120} replayWhenInView>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-foreground">
+            <h2 className="mt-3 text-4xl sm:text-5xl md:text-6xl font-bold text-foreground">
               Wähle Deinen Karriereweg
             </h2>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fadeUp" delay={240} replayWhenInView>
-            <p className="mt-4 mx-auto max-w-2xl text-lg text-foreground-light">
+            <p className="mt-4 mx-auto max-w-3xl text-xl text-foreground-light">
               KI, Sales oder Projektmanagement – in 3 bis 6 Monaten fit für den Arbeitsmarkt. Alle Kurse mit Bildungsgutschein förderbar.
             </p>
           </AnimateOnScroll>
@@ -114,7 +114,7 @@ export default function CoursesSection() {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+          <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
             Jetzt beraten lassen
           </TypeformLink>
         </div>

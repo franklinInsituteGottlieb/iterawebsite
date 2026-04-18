@@ -15,9 +15,8 @@ export default function OrganizationWebSiteSchema() {
         "@type": "Organization",
         "@id": `${base}/#organization`,
         name: siteConfig.seoBrand,
-        alternateName: siteConfig.companyLegalName,
         url: base,
-        logo: `${base}/logo.png`,
+        logo: `${base}/iteracampus_nobg.png`,
         email: siteConfig.footer.email,
         contactPoint: {
           "@type": "ContactPoint",

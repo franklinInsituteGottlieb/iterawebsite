@@ -20,9 +20,9 @@ export default function StandorteOverview() {
   return (
     <>
       <Navbar />
-      <main className="relative min-h-screen pt-28 pb-24">
+      <main className="relative min-h-screen pt-36 pb-24">
         <PageBackground />
-        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 page-shell">
           <Breadcrumbs
             items={[
               { label: "Startseite", href: "/" },
@@ -39,7 +39,7 @@ export default function StandorteOverview() {
               Egal wo Du wohnst – unsere Weiterbildungen in KI, Sales und Projektmanagement sind online verfügbar und werden von der Agentur für Arbeit finanziert.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/25 hover:bg-primary-dark transition-colors">
+              <TypeformLink className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white hover:bg-primary-dark transition-colors">
                 Kostenlos beraten lassen
               </TypeformLink>
               <span className="text-sm text-foreground-light">

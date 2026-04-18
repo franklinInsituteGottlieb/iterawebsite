@@ -15,22 +15,22 @@ export default function CtaSection() {
     >
       <section
         id="kontakt"
-        className="relative py-24 overflow-hidden rounded-t-3xl scroll-mt-28"
+        className="relative py-24 overflow-hidden rounded-t-3xl scroll-mt-36"
       >
         {/* Base gradient – tiefer, satter */}
         <div
           className="absolute inset-0 rounded-t-3xl"
           style={{
             background:
-              "linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 25%, #3b82f6 50%, #2563eb 75%, #1e40af 100%)",
+              "linear-gradient(135deg, #0a1526 0%, #152a45 22%, #7c2d12 48%, #c2410c 72%, #ea580c 100%)",
           }}
         />
         {/* Weiche Licht-Orbs für Tiefe */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-3xl">
           <div className="absolute -top-32 -right-32 h-[420px] w-[420px] rounded-full bg-white/20 blur-3xl" />
-          <div className="absolute -bottom-32 -left-32 h-[380px] w-[380px] rounded-full bg-blue-300/25 blur-3xl" />
+          <div className="absolute -bottom-32 -left-32 h-[380px] w-[380px] rounded-full bg-orange-400/20 blur-3xl" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[500px] rounded-full bg-white/10 blur-3xl" />
-          <div className="absolute top-1/4 right-1/4 h-64 w-64 rounded-full bg-indigo-200/20 blur-2xl" />
+          <div className="absolute top-1/4 right-1/4 h-64 w-64 rounded-full bg-orange-300/15 blur-2xl" />
         </div>
         {/* Dezentes Raster für Struktur */}
         <div
@@ -41,15 +41,15 @@ export default function CtaSection() {
           }}
         />
 
-        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+        <div className="relative z-10 page-shell text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
           {siteConfig.cta.headline}
         </h2>
-        <p className="mt-6 mx-auto max-w-2xl text-lg text-blue-100 leading-relaxed">
+        <p className="mt-6 mx-auto max-w-4xl text-xl sm:text-2xl text-white/85 leading-relaxed">
           {siteConfig.cta.subline}
         </p>
         <div className="mt-10 flex justify-center">
-          <TypeformLink className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-lg font-semibold text-primary shadow-lg hover:bg-slate-50 transition-colors">
+          <TypeformLink className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-lg md:text-xl font-semibold text-primary hover:bg-slate-50 transition-colors">
             Jetzt beraten lassen
             <svg
               className="ml-2 h-5 w-5"
@@ -66,17 +66,17 @@ export default function CtaSection() {
             </svg>
           </TypeformLink>
         </div>
-        <p className="mt-8 text-sm text-blue-200">
+        <p className="mt-8 text-sm text-orange-100/90">
           Unverbindlich &amp; kostenlos – wir melden uns innerhalb von 24 Stunden.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm">
-          <Link href="/standorte" className="text-blue-200 hover:text-white underline underline-offset-2">
+          <Link href="/standorte" className="text-orange-100/90 hover:text-white underline underline-offset-2">
             Standorte
           </Link>
-          <Link href="/ratgeber" className="text-blue-200 hover:text-white underline underline-offset-2">
-            Ratgeber
+          <Link href="/ratgeber" className="text-orange-100/90 hover:text-white underline underline-offset-2">
+            Campus-Wissen
           </Link>
-          <Link href="/#kurse" className="text-blue-200 hover:text-white underline underline-offset-2">
+          <Link href="/#kurse" className="text-orange-100/90 hover:text-white underline underline-offset-2">
             Kurse
           </Link>
         </div>

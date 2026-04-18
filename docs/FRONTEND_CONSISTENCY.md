@@ -1,4 +1,4 @@
-# Frontend-Konsistenz – Forward Education
+# Frontend-Konsistenz – Itera Campus
 
 **Zweck:** Einheitliche UI-Patterns für Buttons, Karten, Abstände und Typografie. Bei neuen Komponenten oder Seiten diese Vorgaben anwenden; bei Reviews prüfen.
 
@@ -76,7 +76,7 @@ className="... rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-wh
 
 ## 5. Abstände
 
-- **Sektionen (Home):** `py-24 scroll-mt-28` für Full-Section; innere Abstände zwischen Blöcken: `mb-12` oder `mb-16` je nach Hierarchie
+- **Sektionen (Home):** `py-24 scroll-mt-36` für Full-Section (unter hoher fixer Nav); innere Abstände zwischen Blöcken: `mb-12` oder `mb-16` je nach Hierarchie
 - **Unterseiten:** Zwischen Sektionen einheitlich `mb-12` oder `mb-14`/`mb-16` – innerhalb einer Seite dasselbe Muster nutzen (z. B. alle `mb-12` oder alle `mb-16`)
 - **Container:** `max-w-6xl mx-auto px-4 sm:px-6 lg:px-8`
 

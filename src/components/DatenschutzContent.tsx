@@ -1,14 +1,16 @@
+import { siteConfig } from "@/config/site.config";
+
 const legalIntro = `
-Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Forward Education GmbH. Eine Nutzung der Internetseiten der Forward Education GmbH ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.
+Wir freuen uns sehr über Ihr Interesse an unserem Bildungsangebot unter der Marke Itera Campus. Datenschutz hat einen besonders hohen Stellenwert für uns als Betreiber dieser Website. Eine Nutzung der Internetseiten ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services über unsere Internetseite in Anspruch nehmen möchte, kann jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.
 
-Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der Datenschutz-Grundverordnung und in Übereinstimmung mit den für die Forward Education GmbH geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser Datenschutzerklärung möchte unser Unternehmen die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.
+Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der Datenschutz-Grundverordnung und in Übereinstimmung mit den für uns geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser Datenschutzerklärung möchten wir die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.
 
-Die Forward Education GmbH hat als für die Verarbeitung Verantwortlicher zahlreiche technische und organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der über diese Internetseite verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können Internetbasierte Datenübertragungen grundsätzlich Sicherheitslücken aufweisen, sodass ein absoluter Schutz nicht gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene Daten auch auf alternativen Wegen, beispielsweise telefonisch, an uns zu übermitteln.
+Wir haben zahlreiche technische und organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der über diese Internetseite verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können internetbasierte Datenübertragungen grundsätzlich Sicherheitslücken aufweisen, sodass ein absoluter Schutz nicht gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene Daten auch auf alternativen Wegen, beispielsweise telefonisch, an uns zu übermitteln.
 `.trim();
 
 export default function DatenschutzContent() {
   return (
-    <div className="prose prose-slate max-w-none text-foreground space-y-6 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:mt-10 [&_h2]:mb-3">
+    <div className="max-w-none text-foreground space-y-6 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:mt-10 [&_h2]:mb-3 [&_p]:text-foreground-light [&_strong]:text-foreground">
       {legalIntro.split("\n\n").map((p, i) => (
         <p key={i} className="text-foreground-light leading-relaxed">
           {p}
@@ -16,7 +18,7 @@ export default function DatenschutzContent() {
       ))}
       <h2>1. Begriffsbestimmungen</h2>
       <p className="text-foreground-light leading-relaxed">
-        Die Datenschutzerklärung der Forward Education GmbH beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung (DS-GVO) verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner einfach lesbar und verständlich sein. Um dies zu gewährleisten, möchten wir vorab die verwendeten Begrifflichkeiten erläutern.
+        Diese Datenschutzerklärung beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung (DS-GVO) verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner einfach lesbar und verständlich sein. Um dies zu gewährleisten, möchten wir vorab die verwendeten Begrifflichkeiten erläutern.
       </p>
       <p className="text-foreground-light leading-relaxed">
         Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:
@@ -67,43 +69,43 @@ export default function DatenschutzContent() {
       </p>
       <h2>2. Name und Anschrift des für die Verarbeitung Verantwortlichen</h2>
       <p className="text-foreground-light leading-relaxed">
-        Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:
+        Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist der im Impressum dieser Seite unter „Angaben gemäß § 5 TMG“ genannte Anbieter der Website unter der Marke {siteConfig.seoBrand}. Gesetzliche Vertretung und vollständige Anbieterangaben sind ausschließlich dort ausgewiesen.
       </p>
       <p className="text-foreground-light leading-relaxed whitespace-pre-line">
-        {`Forward Education GmbH
+        {`Marke: ${siteConfig.seoBrand}
 Stefan-George-Ring 2
 81929 München
 Deutschland
 Tel.: +498962826149
-E-Mail: lorenz.franz@forward-education.de
-Website: forward-education.de`}
+E-Mail: ${siteConfig.footer.email}
+Website: ${siteConfig.siteUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")}`}
       </p>
       <h2>3. Cookies</h2>
       <p className="text-foreground-light leading-relaxed">
-        Die Internetseiten der Forward Education GmbH verwenden Cookies. Cookies sind Textdateien, welche über einen Internetbrowser auf einem Computersystem abgelegt und gespeichert werden. Zahlreiche Internetseiten und Server verwenden Cookies. Viele Cookies enthalten eine sogenannte Cookie-ID. Eine Cookie-ID ist eine eindeutige Kennung des Cookies. Sie besteht aus einer Zeichenfolge, durch welche Internetseiten und Server dem konkreten Internetbrowser zugeordnet werden können, in dem das Cookie gespeichert wurde. Dies ermöglicht es den besuchten Internetseiten und Servern, den individuellen Browser der betroffenen Person von anderen Internetbrowsern, die andere Cookies enthalten, zu unterscheiden. Ein bestimmter Internetbrowser kann über die eindeutige Cookie-ID wiedererkannt und identifiziert werden.
+        Die Internetseiten unter der Marke {siteConfig.seoBrand} verwenden Cookies. Cookies sind Textdateien, welche über einen Internetbrowser auf einem Computersystem abgelegt und gespeichert werden. Zahlreiche Internetseiten und Server verwenden Cookies. Viele Cookies enthalten eine sogenannte Cookie-ID. Eine Cookie-ID ist eine eindeutige Kennung des Cookies. Sie besteht aus einer Zeichenfolge, durch welche Internetseiten und Server dem konkreten Internetbrowser zugeordnet werden können, in dem das Cookie gespeichert wurde. Dies ermöglicht es den besuchten Internetseiten und Servern, den individuellen Browser der betroffenen Person von anderen Internetbrowsern, die andere Cookies enthalten, zu unterscheiden. Ein bestimmter Internetbrowser kann über die eindeutige Cookie-ID wiedererkannt und identifiziert werden.
       </p>
       <p className="text-foreground-light leading-relaxed">
-        Durch den Einsatz von Cookies kann die Forward Education GmbH den Nutzern dieser Internetseite nutzerfreundlichere Services bereitstellen, die ohne die Cookie-Setzung nicht möglich wären. Mittels eines Cookies können die Informationen und Angebote auf unserer Internetseite im Sinne des Benutzers optimiert werden. Cookies ermöglichen uns, die Benutzer unserer Internetseite wiederzuerkennen. Die betroffene Person kann die Setzung von Cookies durch unsere Internetseite jederzeit mittels einer entsprechenden Einstellung des genutzten Internetbrowsers verhindern und damit der Setzung von Cookies dauerhaft widersprechen. Ferner können bereits gesetzte Cookies jederzeit über einen Internetbrowser oder andere Softwareprogramme gelöscht werden. Deaktiviert die betroffene Person die Setzung von Cookies in dem genutzten Internetbrowser, sind unter Umständen nicht alle Funktionen unserer Internetseite vollumfänglich nutzbar.
+        Durch den Einsatz von Cookies können wir den Nutzern dieser Internetseite nutzerfreundlichere Services bereitstellen, die ohne die Cookie-Setzung nicht möglich wären. Mittels eines Cookies können die Informationen und Angebote auf unserer Internetseite im Sinne des Benutzers optimiert werden. Cookies ermöglichen uns, die Benutzer unserer Internetseite wiederzuerkennen. Die betroffene Person kann die Setzung von Cookies durch unsere Internetseite jederzeit mittels einer entsprechenden Einstellung des genutzten Internetbrowsers verhindern und damit der Setzung von Cookies dauerhaft widersprechen. Ferner können bereits gesetzte Cookies jederzeit über einen Internetbrowser oder andere Softwareprogramme gelöscht werden. Deaktiviert die betroffene Person die Setzung von Cookies in dem genutzten Internetbrowser, sind unter Umständen nicht alle Funktionen unserer Internetseite vollumfänglich nutzbar.
       </p>
       <h2>4. Erfassung von allgemeinen Daten und Informationen</h2>
       <p className="text-foreground-light leading-relaxed">
-        Die Internetseite der Forward Education GmbH erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, welche über ein zugreifendes System auf unserer Internetseite angesteuert werden, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen. Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die Forward Education GmbH keine Rückschlüsse auf die betroffene Person. Die anonymen Daten der Server-Logfiles werden getrennt von allen durch eine betroffene Person angegebenen personenbezogenen Daten gespeichert.
+        Unsere Internetseite unter der Marke {siteConfig.seoBrand} erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, welche über ein zugreifendes System auf unserer Internetseite angesteuert werden, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen. Bei der Nutzung dieser allgemeinen Daten und Informationen ziehen wir keine Rückschlüsse auf die betroffene Person. Die anonymen Daten der Server-Logfiles werden getrennt von allen durch eine betroffene Person angegebenen personenbezogenen Daten gespeichert.
       </p>
       <h2>5. Abonnement unseres Newsletters</h2>
       <p className="text-foreground-light leading-relaxed">
-        Auf der Internetseite der Forward Education GmbH wird den Benutzern die Möglichkeit eingeräumt, den Newsletter unseres Unternehmens zu abonnieren. Die Forward Education GmbH informiert ihre Kunden und Geschäftspartner in regelmäßigen Abständen im Wege eines Newsletters über Angebote des Unternehmens. An die von einer betroffenen Person erstmalig für den Newsletterversand eingetragene E-Mail-Adresse wird aus rechtlichen Gründen eine Bestätigungsmail im Double-Opt-In-Verfahren versendet. Bei der Anmeldung zum Newsletter speichern wir ferner die vom Internet-Service-Provider (ISP) vergebene IP-Adresse sowie das Datum und die Uhrzeit der Anmeldung. Die im Rahmen einer Anmeldung zum Newsletter erhobenen personenbezogenen Daten werden ausschließlich zum Versand unseres Newsletters verwendet. Es erfolgt keine Weitergabe an Dritte. Das Abonnement kann jederzeit gekündigt werden; die Einwilligung kann jederzeit widerrufen werden.
+        Auf unserer Internetseite wird den Benutzern die Möglichkeit eingeräumt, den Newsletter zu abonnieren. Wir informieren Kunden und Geschäftspartner in regelmäßigen Abständen im Wege eines Newsletters über Angebote unter der Marke {siteConfig.seoBrand}. An die von einer betroffenen Person erstmalig für den Newsletterversand eingetragene E-Mail-Adresse wird aus rechtlichen Gründen eine Bestätigungsmail im Double-Opt-In-Verfahren versendet. Bei der Anmeldung zum Newsletter speichern wir ferner die vom Internet-Service-Provider (ISP) vergebene IP-Adresse sowie das Datum und die Uhrzeit der Anmeldung. Die im Rahmen einer Anmeldung zum Newsletter erhobenen personenbezogenen Daten werden ausschließlich zum Versand unseres Newsletters verwendet. Es erfolgt keine Weitergabe an Dritte. Das Abonnement kann jederzeit gekündigt werden; die Einwilligung kann jederzeit widerrufen werden.
       </p>
       <h2>6. Newsletter-Tracking</h2>
       <p className="text-foreground-light leading-relaxed">
-        Die Newsletter der Forward Education GmbH enthalten sogenannte Zählpixel. Solche über die in den Newslettern enthaltenen Zählpixel erhobenen personenbezogenen Daten werden von dem für die Verarbeitung Verantwortlichen gespeichert und ausgewertet, um den Newsletterversand zu optimieren. Diese personenbezogenen Daten werden nicht an Dritte weitergegeben. Betroffene Personen sind jederzeit berechtigt, die diesbezügliche Einwilligungserklärung zu widerrufen.
+        Unsere Newsletter können sogenannte Zählpixel enthalten. Solche über die in den Newslettern enthaltenen Zählpixel erhobenen personenbezogenen Daten werden von dem für die Verarbeitung Verantwortlichen gespeichert und ausgewertet, um den Newsletterversand zu optimieren. Diese personenbezogenen Daten werden nicht an Dritte weitergegeben. Betroffene Personen sind jederzeit berechtigt, die diesbezügliche Einwilligungserklärung zu widerrufen.
       </p>
       <h2>7. Kontaktmöglichkeit über die Internetseite</h2>
       <p className="text-foreground-light leading-relaxed">
         Sofern eine betroffene Person per E-Mail oder über ein Kontaktformular den Kontakt mit dem für die Verarbeitung Verantwortlichen aufnimmt, werden die von der betroffenen Person übermittelten personenbezogenen Daten automatisch gespeichert. Solche Daten werden für Zwecke der Bearbeitung oder der Kontaktaufnahme zur betroffenen Person gespeichert. Es erfolgt keine Weitergabe dieser personenbezogenen Daten an Dritte.
       </p>
-      <h2>8. Abonnement von Kommentaren im Ratgeber</h2>
+      <h2>8. Abonnement von Kommentaren im Campus-Wissen</h2>
       <p className="text-foreground-light leading-relaxed">
-        Die im Ratgeber der Forward Education GmbH abgegebenen Kommentare können grundsätzlich von Dritten abonniert werden. Sofern sich eine betroffene Person für die Option entscheidet, Kommentare zu abonnieren, versendet der für die Verarbeitung Verantwortliche eine automatische Bestätigungsmail im Double-Opt-In-Verfahren. Die Option zum Abonnement von Kommentaren kann jederzeit beendet werden.
+        Die im Campus-Wissen-Bereich (Pfad /ratgeber) auf der Website unter der Marke {siteConfig.seoBrand} abgegebenen Kommentare können grundsätzlich von Dritten abonniert werden. Sofern sich eine betroffene Person für die Option entscheidet, Kommentare zu abonnieren, versendet der für die Verarbeitung Verantwortliche eine automatische Bestätigungsmail im Double-Opt-In-Verfahren. Die Option zum Abonnement von Kommentaren kann jederzeit beendet werden.
       </p>
       <h2>9. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</h2>
       <p className="text-foreground-light leading-relaxed">
@@ -123,7 +125,7 @@ Website: forward-education.de`}
       </p>
       <h2>13. Berechtigte Interessen an der Verarbeitung</h2>
       <p className="text-foreground-light leading-relaxed">
-        Basiert die Verarbeitung personenbezogener Daten auf Artikel 6 I lit. f DS-GVO ist unser berechtigtes Interesse die Durchführung unserer Geschäftstätigkeit zugunsten des Wohlergehens all unserer Mitarbeiter und unserer Anteilseigner.
+        Basiert die Verarbeitung personenbezogener Daten auf Artikel 6 I lit. f DS-GVO, ist unser berechtigtes Interesse die Durchführung unserer Geschäftstätigkeit und die Bereitstellung unseres Bildungsangebots.
       </p>
       <h2>14. Dauer der Speicherung</h2>
       <p className="text-foreground-light leading-relaxed">
@@ -135,7 +137,7 @@ Website: forward-education.de`}
       </p>
       <h2>16. Bestehen einer automatisierten Entscheidungsfindung</h2>
       <p className="text-foreground-light leading-relaxed">
-        Als verantwortungsbewusstes Unternehmen verzichten wir auf eine automatische Entscheidungsfindung oder ein Profiling.
+        Wir verzichten auf eine automatische Entscheidungsfindung oder ein Profiling im Sinne von Art. 22 DS-GVO.
       </p>
       <p className="text-foreground-light text-sm mt-10 pt-6 border-t border-slate-200">
         Diese Datenschutzerklärung wurde durch den Datenschutzerklärungs-Generator der DGD Deutsche Gesellschaft für Datenschutz GmbH, die als Externer Datenschutzbeauftragter Nürnberg tätig ist, in Kooperation mit dem Anwalt für IT- und Datenschutzrecht Christian Solmecke erstellt.

@@ -1,4 +1,4 @@
-# Copy-Guidelines – Forward Education
+# Copy-Guidelines – Itera Campus
 
 **Basis:** Copywriting-Skill (`.agents/skills/copywriting/SKILL.md`). Bei neuen oder überarbeiteten Texten diese Regeln und den Skill nutzen.
 

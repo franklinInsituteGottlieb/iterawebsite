@@ -128,33 +128,6 @@ body {
   box-shadow: 0 1px 3px rgb(10 21 38 / 0.06);
 }
 
-/* Legacy marker */
-.mark-draw {
-  position: relative;
-  display: inline-block;
-  transform: skewX(-3deg);
-  padding: 0.15rem 0.4rem;
-}
-
-.mark-draw-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: rgb(255 237 213 / 0.88);
-  border-radius: 0.125rem;
-  transform-origin: left center;
-  z-index: 0;
-}
-
-.mark-draw-text {
-  position: relative;
-  z-index: 1;
-  font-weight: 500;
-  color: var(--color-text);
-}
-
 /* Hero background gradient */
 .hero-bg-gradient {
   background: linear-gradient(

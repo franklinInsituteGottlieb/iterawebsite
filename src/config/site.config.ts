@@ -19,7 +19,7 @@ export interface CourseDetailConfig {
   reviewCount: string;
   contentSections: { title: string; items: string[] }[];
   faq: FaqItemConfig[];
-  /** Optionales Hero-Bild (z. B. /ai.png, /pm.png, /sales.png), Fallback: /pm.png */
+  /** Optionales Hero-Bild (z. B. /schwarzefrau.png), Fallback: /schwarzedame.jpeg */
   heroImage?: string;
 }
 
@@ -138,7 +138,7 @@ export const siteConfig: SiteConfig = {
   hero: {
     headline: "Weiterbildung, die zu Dir passt – praxisnah bis zum Job.",
     subline:
-      "Weiterbildung, die wirkt – mit Bildungsgutschein bis zu 100 % förderbar. Live-Unterricht, echte Projekte und Bewerbungscoaching bis zum nächsten Job.",
+      "Mit Bildungsgutschein bis zu 100 % förderbar: Live-Unterricht auch online, echte Projekte aus der Praxis und Bewerbungscoaching – bis zum nächsten Job.",
     ctaText: "Jetzt kostenlos beraten lassen",
     ctaHref: APPLICATION_FORM_URL,
   },
@@ -288,7 +288,7 @@ export const siteConfig: SiteConfig = {
 /** Dummy-Daten für Kursdetailseiten (später aus Datenbank) */
 export const courseDetailsBySlug: Record<string, CourseDetailConfig> = {
   "kuenstliche-intelligenz": {
-    heroImage: "/ai.png",
+    heroImage: "/schwarzefrau.png",
     features: [
       "MacBook inklusive",
       "Bequem von zuhause aus lernen",
@@ -407,7 +407,7 @@ export const courseDetailsBySlug: Record<string, CourseDetailConfig> = {
     ],
   },
   "it-sales": {
-    heroImage: "/sales.png",
+    heroImage: "/3leute.jpeg",
     features: [
       "MacBook inklusive",
       "Bequem von zuhause aus lernen",
@@ -524,7 +524,7 @@ export const courseDetailsBySlug: Record<string, CourseDetailConfig> = {
     ],
   },
   "projektmanagement": {
-    heroImage: "/pm.png",
+    heroImage: "/schwarzedame.jpeg",
     features: [
       "MacBook inklusive",
       "Bequem von zuhause aus lernen",

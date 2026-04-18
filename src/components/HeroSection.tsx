@@ -17,10 +17,15 @@ export default function HeroSection() {
         <p className="mt-6 mx-auto max-w-4xl text-xl sm:text-2xl text-foreground-light leading-relaxed">
           {siteConfig.hero.subline}
           <br />
-          <span className="inline-block mt-2 mark-draw">
-            <span className="mark-draw-bg" aria-hidden="true" />
-            <span className="mark-draw-text">
-              Bis zu 100&nbsp;% staatlich gefördert &nbsp; Online möglich
+          <span className="relative mt-2 inline-block px-3 py-1.5 sm:px-3.5 sm:py-2">
+            <span
+              className="pointer-events-none absolute inset-y-0 -left-1.5 -right-1.5 -skew-x-[10deg] rounded-sm bg-yellow-200/95 shadow-sm ring-1 ring-yellow-300/55"
+              aria-hidden
+            />
+            <span className="relative font-medium text-foreground">
+              Bis zu 100&nbsp;% staatlich gefördert
+              <span className="inline-block w-2 sm:w-2.5" aria-hidden />
+              Online möglich
             </span>
           </span>
         </p>

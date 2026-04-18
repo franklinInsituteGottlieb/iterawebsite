@@ -235,7 +235,7 @@ export default async function CourseDetailPage({ params, searchParams }: PagePro
               <div className="hidden lg:block relative min-h-[320px]">
                 <div className="relative w-full h-full min-h-[380px] rounded-2xl overflow-hidden border border-slate-200 shadow-lg">
                   <Image
-                    src={detail.heroImage ?? "/pm.png"}
+                    src={detail.heroImage ?? "/schwarzedame.jpeg"}
                     alt={`${displayTitle} – ${siteConfig.seoBrand}`}
                     fill
                     className="object-cover object-center"

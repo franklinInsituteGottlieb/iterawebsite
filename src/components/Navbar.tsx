@@ -54,7 +54,7 @@ export default function Navbar() {
               alt={`${siteConfig.seoBrand} Logo`}
               width={280}
               height={82}
-              className="h-12 w-auto object-contain md:h-16"
+              className="h-9 w-auto object-contain sm:h-10 md:h-12"
               priority
             />
           </a>

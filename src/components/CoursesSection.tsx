@@ -5,8 +5,8 @@ import TypeformLink from "@/components/TypeformLink";
 import { siteConfig } from "@/config/site.config";
 
 const COURSE_IMAGES: Record<string, { src: string; alt: string }> = {
-  "kuenstliche-intelligenz": { src: "/schwarzefrau.png", alt: "Weiterbildung Künstliche Intelligenz – Itera Campus" },
-  "it-sales": { src: "/3leute.jpeg", alt: "Weiterbildung Sales und IT-Vertrieb – Itera Campus" },
+  "kuenstliche-intelligenz": { src: "/blondefrau.png", alt: "Weiterbildung Künstliche Intelligenz – Itera Campus" },
+  "it-sales": { src: "/3leute.png", alt: "Weiterbildung Sales und IT-Vertrieb – Itera Campus" },
   "projektmanagement": { src: "/schwarzedame.jpeg", alt: "Weiterbildung Projektmanagement – Itera Campus" },
 };
 

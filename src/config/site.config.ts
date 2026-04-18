@@ -19,7 +19,7 @@ export interface CourseDetailConfig {
   reviewCount: string;
   contentSections: { title: string; items: string[] }[];
   faq: FaqItemConfig[];
-  /** Optionales Hero-Bild (z. B. /schwarzefrau.png), Fallback: /schwarzedame.jpeg */
+  /** Optionales Hero-Bild (z. B. /blondefrau.png), Fallback: /schwarzedame.jpeg */
   heroImage?: string;
 }
 
@@ -288,7 +288,7 @@ export const siteConfig: SiteConfig = {
 /** Dummy-Daten für Kursdetailseiten (später aus Datenbank) */
 export const courseDetailsBySlug: Record<string, CourseDetailConfig> = {
   "kuenstliche-intelligenz": {
-    heroImage: "/schwarzefrau.png",
+    heroImage: "/blondefrau.png",
     features: [
       "MacBook inklusive",
       "Bequem von zuhause aus lernen",
@@ -407,7 +407,7 @@ export const courseDetailsBySlug: Record<string, CourseDetailConfig> = {
     ],
   },
   "it-sales": {
-    heroImage: "/3leute.jpeg",
+    heroImage: "/3leute.png",
     features: [
       "MacBook inklusive",
       "Bequem von zuhause aus lernen",

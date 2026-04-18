@@ -132,7 +132,7 @@ export default async function CourseByIdPage({ searchParams }: PageProps) {
               <div className="hidden lg:block relative min-h-[320px]">
                 <div className="relative w-full h-full min-h-[380px] rounded-2xl overflow-hidden border border-slate-200 shadow-lg">
                   <Image
-                    src={defaultDetail.heroImage ?? "/pm.png"}
+                    src="/course.png"
                     alt=""
                     fill
                     className="object-cover object-center"

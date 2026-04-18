@@ -52,9 +52,9 @@ export default function Navbar() {
             <Image
               src="/iteracampus_nobg.png"
               alt={`${siteConfig.seoBrand} Logo`}
-              width={320}
-              height={94}
-              className="h-14 w-auto object-contain md:h-[4.25rem]"
+              width={280}
+              height={82}
+              className="h-12 w-auto object-contain md:h-16"
               priority
             />
           </a>

@@ -219,7 +219,7 @@ export const siteConfig: SiteConfig = {
 
   footer: {
     copyright: `© ${new Date().getFullYear()} Itera Campus. Alle Rechte vorbehalten.`,
-    email: "kontakt@iteracampus.de",
+    email: "beratung@iteracampus.de",
     address: "Stefan-George-Ring 2, 81929 München",
   },
 

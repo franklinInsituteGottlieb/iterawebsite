@@ -138,7 +138,7 @@ export const siteConfig: SiteConfig = {
   hero: {
     headline: "Weiterbildung, die zu Dir passt – praxisnah bis zum Job.",
     subline:
-      "Mit Bildungsgutschein bis zu 100 % förderbar: Live-Unterricht auch online, echte Projekte aus der Praxis und Bewerbungscoaching – bis zum nächsten Job.",
+      "Mit Bildungsgutschein bis zu 100 % förderbar: live, online möglich, mit Projekten und Coaching bis zum Job.",
     ctaText: "Jetzt kostenlos beraten lassen",
     ctaHref: APPLICATION_FORM_URL,
   },

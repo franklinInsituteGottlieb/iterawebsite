@@ -2,10 +2,20 @@
 
 import { COMPANY_LOGOS } from "@/config/partners.config";
 
-export default function CompanyLogosCarousel() {
+interface CompanyLogosCarouselProps {
+  /** Standard zentriert; im Hero oft links unter dem Text */
+  headingAlign?: "center" | "start";
+}
+
+export default function CompanyLogosCarousel({ headingAlign = "center" }: CompanyLogosCarouselProps) {
+  const headingClass =
+    headingAlign === "start" ? "text-center lg:text-left" : "text-center";
+
   return (
     <div className="mt-14 w-full">
-      <p className="text-center text-sm font-semibold uppercase tracking-wider text-foreground-light mb-6">
+      <p
+        className={`text-sm font-semibold uppercase tracking-wider text-black mb-6 ${headingClass}`}
+      >
         Unsere Teilnehmer arbeiten hier
       </p>
       <div className="relative overflow-hidden">

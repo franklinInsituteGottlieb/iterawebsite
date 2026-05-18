@@ -4,6 +4,7 @@ import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import TypeformLink from "@/components/TypeformLink";
 import { siteConfig } from "@/config/site.config";
+import { getHomeCtaSubline } from "@/lib/homepage-funding";
 
 export default function CtaSection() {
   return (
@@ -46,7 +47,7 @@ export default function CtaSection() {
           {siteConfig.cta.headline}
         </h2>
         <p className="mt-6 mx-auto max-w-4xl text-xl sm:text-2xl text-white/85 leading-relaxed">
-          {siteConfig.cta.subline}
+          {getHomeCtaSubline()}
         </p>
         <div className="mt-10 flex justify-center">
           <TypeformLink className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-lg md:text-xl font-semibold text-primary hover:bg-slate-50 transition-colors">

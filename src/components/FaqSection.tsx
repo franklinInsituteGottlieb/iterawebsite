@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { siteConfig } from "@/config/site.config";
+import { getHomeFaq } from "@/lib/homepage-funding";
 
 export default function FaqSection() {
+  const faqItems = getHomeFaq();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -18,7 +19,7 @@ export default function FaqSection() {
         </h2>
 
         <div className="space-y-3">
-          {siteConfig.faq.map((item, index) => (
+          {faqItems.map((item, index) => (
             <div
               key={index}
               className="rounded-xl border border-slate-200 bg-slate-50 overflow-hidden"

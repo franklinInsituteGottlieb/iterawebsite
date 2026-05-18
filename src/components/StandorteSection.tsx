@@ -3,6 +3,7 @@
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { featuredStandorte } from "@/config/standorte.config";
+import { getHomeStandorteIntro } from "@/lib/homepage-funding";
 
 export default function StandorteSection() {
 
@@ -22,8 +23,7 @@ export default function StandorteSection() {
           </AnimateOnScroll>
           <AnimateOnScroll animation="fadeUp" delay={240} replayWhenInView>
             <p className="mt-4 mx-auto max-w-3xl text-xl text-foreground-light">
-              Egal wo Du wohnst – unsere Kurse in KI, Sales und Projektmanagement
-              sind online oder vor Ort verfügbar! Alle Kurse sind mit dem Bildungsgutschein förderbar.
+              {getHomeStandorteIntro()}
             </p>
           </AnimateOnScroll>
         </div>

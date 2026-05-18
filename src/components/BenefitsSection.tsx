@@ -1,6 +1,6 @@
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import TypeformLink from "@/components/TypeformLink";
-import { siteConfig } from "@/config/site.config";
+import { getHomeBenefits, getHomeBenefitsIntro } from "@/lib/homepage-funding";
 
 function BenefitIcon({ icon }: { icon: string }) {
   const cls = "h-6 w-6";
@@ -62,14 +62,14 @@ export default function BenefitsSection() {
                 Deine Vorteile
               </h2>
               <p className="mt-4 mx-auto max-w-3xl text-lg text-foreground-light">
-                Von der ersten Beratung bis zum nächsten Job: Du bekommst konkrete Skills, keine Kosten und Begleitung, die wirkt.
+                {getHomeBenefitsIntro()}
               </p>
             </div>
 
             {/* Vorteile als Grid innerhalb der Kachel */}
             <div className="p-8 sm:p-10 lg:p-12">
               <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {siteConfig.benefits.map((benefit, index) => (
+                {getHomeBenefits().map((benefit) => (
                   <div
                     key={benefit.title}
                     className="flex gap-4"

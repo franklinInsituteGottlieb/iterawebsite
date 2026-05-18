@@ -3,6 +3,7 @@ import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import TypeformLink from "@/components/TypeformLink";
 import { siteConfig } from "@/config/site.config";
+import { getHomeCoursesIntro } from "@/lib/homepage-funding";
 
 const COURSE_IMAGES: Record<string, { src: string; alt: string }> = {
   "kuenstliche-intelligenz": { src: "/blondefrau.png", alt: "Weiterbildung Künstliche Intelligenz – Itera Campus" },
@@ -25,7 +26,7 @@ export default function CoursesSection() {
                 Wähle Deinen Karriereweg
               </h2>
               <p className="mx-auto mt-4 max-w-3xl text-lg text-foreground-light sm:text-xl">
-                KI, Sales oder Projektmanagement: in 3 bis 6 Monaten fit für den Arbeitsmarkt. Alle Kurse mit Bildungsgutschein förderbar.
+                {getHomeCoursesIntro()}
               </p>
             </div>
 

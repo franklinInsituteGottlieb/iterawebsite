@@ -112,6 +112,27 @@ export interface SiteConfig {
   faq: FaqItemConfig[];
   /** Page-Logs an Google Sheet (brand für page_logs-Sheet) */
   tracking?: { brand: string };
+  /** Feature-Flags (Startseite) */
+  features: {
+    /** Bildungsgutschein / Förderung auf der Startseite anzeigen */
+    showBildungsgutscheinOnHomepage: boolean;
+  };
+  /** Alternative Texte auf der Startseite, wenn showBildungsgutscheinOnHomepage false */
+  homepageWithoutFunding: {
+    heroSubline: string;
+    /** Zwei Teile für die gelbe Markierung im Hero (wie zuvor Förderung + Online) */
+    heroHighlights: [string, string];
+    coursesIntro: string;
+    standorteIntro: string;
+    benefitsIntro: string;
+    ctaSubline: string;
+    /** Ersetzt den Vorteil „Du zahlst nichts“, solange Gutschein ausgeblendet ist */
+    benefitReplacement: BenefitConfig;
+    hiddenFaqQuestions: string[];
+    faqAnswerOverrides: Record<string, string>;
+    /** Zusätzliche FAQ statt der ausgeblendeten Kostenfrage */
+    replacementFaq: FaqItemConfig;
+  };
 }
 
 /** Link für Bewerbung / Beratung (Typeform Kurzbewerbung) */
@@ -283,6 +304,40 @@ export const siteConfig: SiteConfig = {
     },
   ],
   tracking: { brand: "itera-campus" },
+  features: {
+    showBildungsgutscheinOnHomepage: false,
+  },
+  homepageWithoutFunding: {
+    heroSubline:
+      "Weiterbildung mit Live-Unterricht, echten Projekten und Bewerbungscoaching – flexibel online oder vor Ort, bis Du im Job ankommst.",
+    heroHighlights: ["Von erfahrenen Dozent:innen", "Live & praxisnah"],
+    coursesIntro:
+      "KI, Sales oder Projektmanagement: in 3 bis 6 Monaten fit für den Arbeitsmarkt – mit Dozent:innen aus der Praxis, kleinen Gruppen und klarem Karriere-Fokus.",
+    standorteIntro:
+      "Egal wo Du wohnst – lerne in KI, Sales und Projektmanagement online im Live-Format oder vor Ort in München. Wir begleiten Dich bis zum nächsten Job.",
+    benefitsIntro:
+      "Von der ersten Beratung bis zum nächsten Job: konkrete Skills, echte Projekte und persönliche Begleitung – ohne leere Versprechen.",
+    ctaSubline:
+      "Kostenlose Beratung – wir klären Deinen Einstieg, den passenden Kurs und Deinen Starttermin. Unverbindlich, Antwort innerhalb von 24 Stunden.",
+    benefitReplacement: {
+      title: "Kleine Lerngruppen",
+      description:
+        "Maximal 15 Teilnehmer:innen – mehr Zeit für Deine Fragen, ehrliches Feedback und Begleitung bis zum Abschluss.",
+      icon: "usergroup",
+    },
+    hiddenFaqQuestions: ["Wer übernimmt die Kosten für die Weiterbildung?"],
+    faqAnswerOverrides: {
+      "Ist Itera Campus seriös?":
+        "Ja. Itera Campus ist die Marke für unsere Weiterbildungsangebote; Anbieter und Kontakt siehst Du im Impressum. Wir arbeiten mit anerkannten Partnern zusammen, und unsere Absolvent:innen starten bei namhaften Arbeitgebern. Seriosität und Transparenz sind uns wichtig – bei Fragen erreichst Du uns jederzeit.",
+      "Wie läuft die kostenlose Beratung ab?":
+        "Klick auf „Jetzt beraten lassen“ und fülle das kurze Formular aus. Wir melden uns innerhalb von 24 Stunden, klären Deine Ziele und Voraussetzungen und empfehlen den passenden Kurs inklusive Starttermin. Kostenlos und unverbindlich.",
+    },
+    replacementFaq: {
+      question: "Was erwartet mich im Kurs?",
+      answer:
+        "Live-Unterricht mit max. 15 Teilnehmer:innen, echte Projekte statt reiner Theorie und Bewerbungscoaching bis zum Job. Du lernst von Trainer:innen mit Berufserfahrung in KI, Vertrieb oder Projektmanagement – online oder vor Ort in München.",
+    },
+  },
 };
 
 /** Dummy-Daten für Kursdetailseiten (später aus Datenbank) */

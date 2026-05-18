@@ -1,4 +1,4 @@
-import { siteConfig } from "@/config/site.config";
+import { getHomeFaq } from "@/lib/homepage-funding";
 import JsonLd from "./JsonLd";
 
 /**
@@ -9,7 +9,7 @@ export default function FaqPageSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: siteConfig.faq.map((item) => ({
+    mainEntity: getHomeFaq().map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {

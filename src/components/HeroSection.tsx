@@ -1,6 +1,7 @@
 "use client";
 
 import { siteConfig } from "@/config/site.config";
+import { getHomeHeroHighlights, getHomeHeroSubline } from "@/lib/homepage-funding";
 import TypeformLink from "@/components/TypeformLink";
 import CompanyLogosCarousel from "@/components/CompanyLogosCarousel";
 
@@ -32,6 +33,8 @@ function GoogleRatingBlock({ className = "" }: { className?: string }) {
 }
 
 export default function HeroSection() {
+  const [heroHighlightFirst, heroHighlightSecond] = getHomeHeroHighlights();
+
   return (
     <section className="relative min-h-screen overflow-x-hidden pt-28 md:pt-32 pb-16 md:pb-20">
       <div className="relative z-10 page-shell">
@@ -43,7 +46,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground-light sm:text-xl lg:max-w-xl">
-              {siteConfig.hero.subline}
+              {getHomeHeroSubline()}
             </p>
 
             <p className="mt-5 text-base sm:text-lg">
@@ -53,9 +56,9 @@ export default function HeroSection() {
                   aria-hidden
                 />
                 <span className="relative font-medium text-foreground">
-                  Bis zu 100&nbsp;% staatlich gefördert
+                  {heroHighlightFirst}
                   <span className="inline-block w-2 sm:w-2.5" aria-hidden />
-                  Online möglich
+                  {heroHighlightSecond}
                 </span>
               </span>
             </p>
